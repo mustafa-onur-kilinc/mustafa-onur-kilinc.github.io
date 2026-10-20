@@ -1,0 +1,466 @@
+/**
+ * Resources used to write this file:
+ * Class selectors 2025, MDN contributors, accessed 16 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Class_selectors>
+ *
+ * Comment your CSS 2026, MDN contributors, accessed 16 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing#comment_your_css>
+ *
+ * font-size CSS property 2026, MDN contributors, accessed 19 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size>
+ *
+ * How TO - On Scroll Header n.d., Refsnes Data, accessed 17 October 2026,
+ * <https://www.w3schools.com/howto/howto_js_sticky_header.asp>
+ *
+ * opacity CSS property 2026, MDN contributors, accessed 17 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity>
+ *
+ * CSS Center Align n.d., Refsnes Data, accessed 17 October 2026,
+ * <https://www.w3schools.com/css/css_align.asp>
+ *
+ * Basic concepts of flexbox 2026, MDN contributors, accessed 17 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts>
+ *
+ * border-radius CSS property 2026, MDN contributors, accessed 17 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-radius>
+ *
+ * Christoph 2012, "Space between two divs", Stack Exchange, Inc., accessed 18 October 2026,
+ * <https://stackoverflow.com/a/11014778>
+ *
+ * CSS Background Image n.d., Refsnes Data, accessed 18 October 2026,
+ * <https://www.w3schools.com/csS/css_background_image.asp>
+ *
+ * background-image CSS property 2026, MDN contributors, accessed 18 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-image>
+ *
+ * background-size CSS property 2026, MDN contributors, accessed 18 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-size>
+ *
+ * background-color CSS property 2026, MDN contributors, accessed 18 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-color>
+ *
+ * Carlos2W 2026, "Change background image opacity", Stack Exchange, Inc., accessed 18 October 2026,
+ * <https://stackoverflow.com/a/40366996>
+ *
+ * background-blend-mode CSS property 2026, MDN contributors, accessed 18 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-blend-mode>
+ *
+ * Eric N 2021, "text align right in a span", Stack Exchange, Inc., accessed 18 October 2026,
+ * <https://stackoverflow.com/a/40427512>
+ *
+ * Jonas Hietala 2024, "A simple timeline using CSS flexbox", accessed 18 October 2026,
+ * <https://www.jonashietala.se/blog/2024/08/25/a_simple_timeline_using_css_flexbox/>
+ *
+ * How TO - Timeline n.d., Refsnes Data, accessed 18 October 2026,
+ * <https://www.w3schools.com/howto/howto_css_timeline.asp>
+ *
+ * ::after CSS pseudo-element 2026, MDN contributors, accessed 18 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::after>
+ *
+ * The original generator for Glassmorphism n.d., accessed 19 October 2026,
+ * <https://hype4.academy/tools/glassmorphism-generator>
+ *
+ * bithiba 2024, "Issue with backdrop-filter on menu in Chromium", Reddit, Inc., accessed 18 October 2026,
+ * <https://www.reddit.com/r/css/comments/1h77xxr/comment/m0oeajb/>
+ *
+ * position CSS property 2026, MDN contributors, accessed 18 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position>
+ *
+ * Stacking context 2026, MDN contributors, accessed 18 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Positioned_layout/Stacking_context>
+ *
+ * background-size CSS property 2026, MDN contributors, accessed 18 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-size>
+ *
+ * Tea Trakoštanec 2025, "HTML and CSS best practices", Netgen d.o.o., accessed 19 October 2026,
+ * <https://netgen.io/blog/html-and-css-best-practices>
+ *
+ * Sebastiano Guerriero 2020, "Building a Scalable CSS Architecture With BEM and Utility Classes",
+ * accessed 19 October 2026,
+ * <https://css-tricks.com/building-a-scalable-css-architecture-with-bem-and-utility-classes/>
+ *
+ * Organizing your CSS 2026, MDN contributors, accessed 19 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing>
+ *
+ * Organizing your CSS 2026, MDN contributors, accessed 19 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties>
+ *
+ * Numbers, lengths, and percentages 2026, MDN contributors, accessed 19 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units#numbers_lengths_and_percentages>
+ *
+ * <absolute-size> CSS type 2026, MDN contributors, accessed 19 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/absolute-size>
+ */
+
+/* || General */
+
+:root {
+    --primary_color: rgba(62, 84, 190, 1.0);
+    --primary_bg_color: rgba(62, 84, 190, 1.0);
+    --secondary_bg_color: rgba(180, 180, 180, 1.0);
+    --secondary_bg_color_alpha: rgba(180, 180, 180, 0.6);
+
+    --white: rgba(255, 255, 255, 1.0);
+}
+
+body {
+    /* Alpha of background-color is inversely proportional to
+    opacity of background-image */
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url("../static/images/endless_constellation_white_svg_backgrounds.png");
+    background-size: 15%;
+    background-blend-mode: lighten;
+
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+h1, h2, h3 {
+    margin-block: 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--primary_color);
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 0.75em;
+
+    padding-inline-start: 0;
+}
+
+ul > * {
+    list-style: none;
+
+    background: var(--primary_bg_color);
+    color: var(--white);
+    border-radius: 1em;
+
+    padding: 0.5em;
+}
+
+footer {
+    text-align: center;
+}
+
+/* || Utilities */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 20px 10px rgba(255, 255, 255, 1);
+    overflow: hidden;
+    z-index: 1; /* Seems to solve .timeline not getting blurred problem*/
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.8),
+        transparent
+    );
+}
+
+.glass-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.8),
+        transparent,
+        rgba(255, 255, 255, 0.3)
+    );
+}
+
+.button_large {
+    margin-top: 0.5em;
+    border-radius: 2.25em;
+
+    font-size: 1.125em;
+}
+
+.button_medium {
+    border-radius: 1em;
+}
+
+.button_primary {
+    background: var(--primary_bg_color);
+    color: var(--white);
+}
+
+.button_secondary {
+    background: var(--secondary_bg_color);
+}
+
+.card {
+    background: var(--secondary_bg_color_alpha);
+    border-radius: 1em;
+}
+
+.padding-xs {
+    padding: 0.5em;
+}
+
+.padding-sm {
+    padding: 0.75em;
+}
+
+.padding-md {
+    padding: 1em;
+}
+
+/* || Sitewide */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+
+    position: sticky;
+    top: 0;
+}
+
+.header_element_flexbox {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+#website_logo {
+    justify-content: start;
+}
+
+#navigation_links {
+    justify-content: space-between;
+}
+
+#quick_settings {
+    justify-content: end;
+}
+
+.chapter_title {
+    color: var(--primary_color);
+}
+
+/* || Home */
+
+#intro_page {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#who_am_i {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 1 auto;
+    width: 65%;
+}
+
+#contact_images {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    column-gap: 0.5em;
+
+    margin-bottom: 0.5em;
+}
+
+.contact_image {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.4em;
+    background: var(--secondary_bg_color);
+}
+
+#contact_and_download_cv_buttons {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 auto;
+    column-gap: 0.75em;
+}
+
+#my_title {
+    color: var(--primary_color);
+}
+
+/* || Experience */
+
+.timeline {
+    position: relative;
+
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 3em;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    background-color: var(--primary_color);
+    top: 0;
+    width: 0.4em;
+    height: 100%;
+    margin-left: -0.75em;
+}
+
+.experience_entry {
+    padding-left: 0.5em;
+    position: relative;
+    align-items: baseline;
+}
+
+.experience_entry::before {
+    content: '';
+    position: absolute;
+    width: 0.4em;
+    height: 0.4em;
+    left: -1em;
+    background-color: white;
+    border: 0.25em solid var(--primary_color);
+    top: 0.4em;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.experience_header {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.experience_title {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+}
+
+.working_title {
+    font-size: 1.5em;
+
+    margin-block: 0;
+}
+
+.company_name {
+    font-size: 1.125em;
+    color: var(--primary_color);
+
+    margin-block: 0;
+}
+
+.time_of_working {
+    display: flex;
+    text-align: right;
+}
+
+/* || Skills */
+
+#all_skills {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    row-gap: 1.25em;
+}
+
+.skillset {
+    width: 45%;
+}
+
+/* || Projects */
+
+#all_projects {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 auto;
+    column-gap: 1em;
+}
+
+.project_card {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 1 auto;
+
+    width: 25%;
+}
+
+.project_source_button {
+    align-self: end;
+}
+
+/* || Contact */
+
+#contact_methods {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    justify-content: space-between
+}
+
+#contact_cards {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    align-items: stretch;
+    row-gap: 0.5em;
+    width: 48%;
+}
+
+.contact_card {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: left;
+    column-gap: 0.5em;
+}
+
+.contact_info {
+    margin: 0;
+}
+
+#contact_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+}
