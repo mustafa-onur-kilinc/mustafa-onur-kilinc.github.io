@@ -13,6 +13,12 @@ Reddit, Inc., accessed 17 October 2026,
 
 <footer> HTML footer element 2026, MDN contributors, accessed 19 October 2026,
 <https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer>
+
+manaschhabra2 2025, "How to Add Link to HTML Button?", Sanchhaya Education Private Limited, accessed 20 October 2026,
+<https://www.geeksforgeeks.org/html/how-to-create-an-html-button-that-acts-like-a-link/>
+
+abishek7 2025, "How to Trigger a File Download when Clicking an HTML Button or JavaScript?", accessed 20 October 2026,
+<https://www.geeksforgeeks.org/javascript/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/>
 -->
 
 <!DOCTYPE html>
@@ -69,15 +75,17 @@ Reddit, Inc., accessed 17 October 2026,
       </div>
 
       <div id="contact_and_download_cv_buttons">
-        <div class="button button_large button_primary padding-md">
-          <a href="./index.html#contact">Contact Me</a>
-        </div>
+        <a href="./templates/contact.html">
+          <button class="button button_large button_primary padding-md" type="button">
+            Contact Me
+          </button>
+        </a>
 
-        <div class="button button_large button_secondary padding-md">
-          <a href="./static/files/mustafa_onur_kilinc_english_cv.pdf" download="mustafa_onur_kilinc_cv.pdf">
+        <a href="./static/files/mustafa_onur_kilinc_english_cv.pdf" download="mustafa_onur_kilinc_cv.pdf">
+          <button class="button button_large button_secondary padding-md" type="button">
             Download CV (PDF, 173 KB)
-          </a>
-        </div>
+          </button>
+        </a>
       </div>
     </div>
 
