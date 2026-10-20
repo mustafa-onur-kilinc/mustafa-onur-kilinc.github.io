@@ -1,0 +1,182 @@
+<!--
+Resources used to write this file:
+Creating links 2025, MDN contributors, accessed 17 October 2026,
+<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links>
+
+lovesrayray2018 2022, "How do I link between HTML pages on a website?",
+Reddit, Inc., accessed 17 October 2026,
+<https://www.reddit.com/r/learnprogramming/comments/vrb4wu/comment/ieu3sbk/>
+
+Jonas Hietala 2024, "A simple timeline using CSS flexbox", accessed 18 October 2026,
+<https://www.jonashietala.se/blog/2024/08/25/a_simple_timeline_using_css_flexbox/>
+
+How TO - Timeline n.d., Refsnes Data, accessed 18 October 2026,
+<https://www.w3schools.com/howto/howto_css_timeline.asp>
+
+<footer> HTML footer element 2026, MDN contributors, accessed 19 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mustafa Onur KILINÇ - Computer Engineer</title>
+    <link rel="stylesheet" href="../static/style.css"/>
+</head>
+<body>
+  <header class="glass-card">
+    <div class="header_element_flexbox" id="website_logo">
+      <a href="./index.html">Mustafa Onur KILINÇ</a>
+    </div>
+
+    <nav class="header_element_flexbox" id="navigation_links">
+      <a href="./about.html">About</a>
+      <a href="./about.html#experience">Experience</a>
+      <a href="./about.html#skills">Skills</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="header_element_flexbox" id="quick_settings">
+      <p>Dark Mode <span>EN</span></p>
+    </div>
+  </header>
+
+  <h2>Chapter 1</h2>
+  <h1>About Me</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nulla iaculis lectus vestibulum euismod lobortis.
+    Nam vel lacus et sapien tempus blandit. Nullam sodales tempor ligula.
+  </p>
+
+  <p>
+    Aenean tempus, purus et ultrices convallis, dolor nisl tristique urna,
+    nec aliquam massa ipsum ac leo. Etiam dictum pulvinar elementum.
+    Etiam tristique nunc ut lorem consequat rhoncus.
+  </p>
+
+  <p>
+    Aenean luctus vehicula dolor, sed ullamcorper dui tempus id.
+    Nullam accumsan condimentum venenatis. Praesent egestas suscipit mauris
+    quis sodales. Nunc finibus est vel.
+  </p>
+
+  <h3 id="experience">Chapter 1.1</h3>
+  <h2 class="chapter_title">Experience</h2>
+
+  <div class="timeline">
+    <div class="experience_entry">
+      <div class="experience_header">
+        <div class="experience_title">
+          <p class="working_title">Lane Detection Deparment Member</p>
+          <p class="company_name">YTÜ Alternatif Enerjili Sistemler Kulübü</p>
+        </div>
+
+        <span class="time_of_working">June 2023<br>August 2024</span>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
+        Orci varius natoque.
+      </p>
+      <ul>
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+        <li>Amet</li>
+      </ul>
+    </div>
+
+    <div class="experience_entry">
+      <div class="experience_header">
+        <div class="experience_title">
+          <p class="working_title">Process and Customer Development Department Intern</p>
+          <p class="company_name">Mars Logistics</p>
+        </div>
+
+        <span class="time_of_working">October 2023<br>December 2023</span>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
+        Orci varius natoque.
+      </p>
+      <ul>
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+        <li>Amet</li>
+      </ul>
+    </div>
+
+    <div class="experience_entry">
+      <div class="experience_header">
+        <div class="experience_title">
+          <p class="working_title">Team Member</p>
+          <p class="company_name">YTÜ Alternatif Enerjili Sistemler Kulübü</p>
+        </div>
+
+        <span class="time_of_working">October 2022<br>June 2023</span>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
+        Orci varius natoque.
+      </p>
+      <ul>
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+        <li>Amet</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 id="skills">Chapter 1.2</h3>
+  <h2 class="chapter_title">Skills</h2>
+
+  <div id="all_skills">
+    <div class="card skillset padding-sm">
+      <h3>Programming Languages</h3>
+      <ul>
+        <li>C/C++</li>
+        <li>Python</li>
+        <li>Java</li>
+      </ul>
+    </div>
+
+    <div class="card skillset padding-sm">
+      <h3>Tools and Platforms</h3>
+      <ul>
+        <li>Bash</li>
+        <li>SQL</li>
+        <li>ROS</li>
+        <li>Docker</li>
+        <li>Git</li>
+        <li>Canva</li>
+      </ul>
+    </div>
+
+    <div class="card skillset padding-sm">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Graphic Design</li>
+        <li>Teamwork</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="padding-xs">
+    <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">
+      Free SVG Backgrounds and Patterns by SVGBackgrounds.com
+    </a>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">
+      Email icons created by Magnific - Flaticon
+    </a>
+  </footer>
+</body>
+</html>

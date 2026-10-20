@@ -1,0 +1,99 @@
+<!--
+Resources used to write this file:
+HTML cheatsheet for syntax and common tasks 2025,
+MDN contributors, accessed 16 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet>
+
+Creating links 2025, MDN contributors, accessed 17 October 2026,
+<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links>
+
+lovesrayray2018 2022, "How do I link between HTML pages on a website?",
+Reddit, Inc., accessed 17 October 2026,
+<https://www.reddit.com/r/learnprogramming/comments/vrb4wu/comment/ieu3sbk/>
+
+<footer> HTML footer element 2026, MDN contributors, accessed 19 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mustafa Onur KILINÇ - Computer Engineer</title>
+  <link rel="stylesheet" href="../static/style.css"/>
+</head>
+<body>
+  <header class="glass-card">
+    <div class="header_element_flexbox" id="website_logo">
+      <a href="./index.html">Mustafa Onur KILINÇ</a>
+    </div>
+
+    <nav class="header_element_flexbox" id="navigation_links">
+      <a href="./about.html">About</a>
+      <a href="./about.html#experience">Experience</a>
+      <a href="./about.html#skills">Skills</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="header_element_flexbox" id="quick_settings">
+      <p>Dark Mode <span>EN</span></p>
+    </div>
+  </header>
+
+  <div id="intro_page">
+    <div id="who_am_i">
+      <h2>Hello, my name is</h2>
+      <h1>Mustafa Onur KILINÇ</h1>
+      <h2>I am a <span id="my_title">Computer Engineer</span></h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vestibulum urna est, rhoncus nec nisl at, lobortis
+        tincidunt libero. Vestibulum non lacus vitae nulla
+        euismod volutpat eu sed nisi.
+      </p>
+
+      <div id="contact_images">
+        <a href="https://github.com/mustafa-onur-kilinc" target="_blank" class="contact_image padding-xs">
+          <img src="../static/images/GitHub_Invertocat_White.svg" width="30" alt="GitHub">
+        </a>
+
+        <a href="https://linkedin.com/in/mustafa-onur-kilinç-479449173" target="_blank" class="contact_image padding-xs">
+          <img src="../static/images/LinkedIn-InBug-White.png" width="30" alt="LinkedIn">
+        </a>
+
+        <a href="mailto:mustafaonurkilinc00@gmail.com" class="contact_image padding-xs">
+          <img src="../static/images/mail_logo_by_magnific_flaticon_white.png" width="30" alt="E-mail">
+        </a>
+      </div>
+
+      <div id="contact_and_download_cv_buttons">
+        <div class="button button_large button_primary padding-md">
+          <a href="./index.html#contact">Contact Me</a>
+        </div>
+
+        <div class="button button_large button_secondary padding-md">
+          <a href="../static/files/mustafa_onur_kilinc_english_cv.pdf" download="mustafa_onur_kilinc_cv.pdf">
+            Download CV (PDF, 173 KB)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="profile_picture">
+      <img src="../static/images/mustafa_onur_kilinc_photo.jpg" alt="My Profile Picture" width="250"/>
+    </div>
+  </div>
+
+  <footer class="padding-xs">
+    <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">
+      Free SVG Backgrounds and Patterns by SVGBackgrounds.com
+    </a>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">
+      Email icons created by Magnific - Flaticon
+    </a>
+  </footer>
+</body>
+</html>
