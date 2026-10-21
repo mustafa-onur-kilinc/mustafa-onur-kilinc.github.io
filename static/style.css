@@ -134,6 +134,8 @@ h2 {
     column-gap: 0.75em;
 
     padding-inline-start: 0;
+
+    list-style: none;
 }
 
 ul > * {
