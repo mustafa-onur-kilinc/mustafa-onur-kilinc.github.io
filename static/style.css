@@ -149,6 +149,11 @@ h2 {
     padding: 0.5em;
 }
 
+.list__element--secondary {
+    background: var(--secondary_color);
+    color: var(--dark_grey);
+}
+
 footer {
     text-align: center;
 }
