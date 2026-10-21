@@ -138,8 +138,9 @@ h2 {
     list-style: none;
 }
 
-ul > * {
-    list-style: none;
+.list__element {
+    background: var(--primary_color);
+    color: var(--light_grey);
 
     background: var(--primary_bg_color);
     color: var(--white);
