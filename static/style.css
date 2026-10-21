@@ -98,12 +98,13 @@
 /* || General */
 
 :root {
-    --primary_color: rgba(62, 84, 190, 1.0);
-    --primary_bg_color: rgba(62, 84, 190, 1.0);
-    --secondary_bg_color: rgba(180, 180, 180, 1.0);
-    --secondary_bg_color_alpha: rgba(180, 180, 180, 0.6);
+    --primary_color: rgba(12, 65, 145, 1.0);
+    --primary_bg_color: rgba(254, 252, 252, 1.0);
+    --secondary_color: rgba(218, 232, 247, 1.0);
+    --accent_color: rgba(101, 38, 217, 1.0);
 
-    --white: rgba(255, 255, 255, 1.0);
+    --light_grey: rgba(255, 255, 255, 1.0);
+    --dark_grey: rgba(51, 51, 51, 1.0);
 }
 
 body {
@@ -145,10 +146,7 @@ h2 {
     background: var(--primary_color);
     color: var(--light_grey);
 
-    background: var(--primary_bg_color);
-    color: var(--white);
     border-radius: 1em;
-
     padding: 0.5em;
 }
 
@@ -219,18 +217,54 @@ footer {
     border-radius: 1em;
 }
 
-.button_primary {
-    background: var(--primary_bg_color);
-    color: var(--white);
+.button_primary--hollow {
+    background: rgba(255, 255, 255, 0.0);
+    border: 4px solid var(--primary_color);
+    color: var(--primary_color);
 }
 
 .button_secondary {
-    background: var(--secondary_bg_color);
+    background: var(--secondary_color);
+    color: var(--dark_grey);
+
+}
+
+.button_accent {
+    background: var(--accent_color);
+    color: var(--light_grey);
 }
 
 .card {
-    background: var(--secondary_bg_color_alpha);
+    background: var(--primary_color);
     border-radius: 1em;
+}
+
+.color_primary {
+    color: var(--primary_color)
+}
+
+.bg_color_primary {
+    background: var(--primary_color)
+}
+
+.color_secondary {
+    color: var(--secondary_color)
+}
+
+.bg_color_secondary {
+    background: var(--secondary_color)
+}
+
+.color_accent {
+    color: var(--accent_color)
+}
+
+.color_light_grey {
+    color: var(--light_grey)
+}
+
+.color_dark_grey {
+    color: var(--dark_grey)
 }
 
 .padding-xs {
@@ -344,7 +378,7 @@ header {
 .timeline::before {
     content: '';
     position: absolute;
-    background-color: var(--primary_color);
+    background-color: var(--accent_color);
     top: 0;
     width: 0.4em;
     height: 100%;
@@ -364,7 +398,7 @@ header {
     height: 0.4em;
     left: -1em;
     background-color: white;
-    border: 0.25em solid var(--primary_color);
+    border: 0.25em solid var(--accent_color);
     top: 0.4em;
     border-radius: 50%;
     z-index: 1;
@@ -474,4 +508,5 @@ header {
     align-items: center;
     justify-content: center;
     width: 48%;
+    color: var(--secondary_color);
 }
