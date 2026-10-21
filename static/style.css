@@ -276,8 +276,19 @@ header {
     justify-content: end;
 }
 
-.chapter_title {
-    color: var(--primary_color);
+.contact_image {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.4em;
+    background: var(--primary_color);
+}
+
+.contact_image--secondary {
+    background: var(--secondary_color);
 }
 
 /* || Home */
