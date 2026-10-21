@@ -317,17 +317,6 @@ header {
     margin-bottom: 0.5em;
 }
 
-.contact_image {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 0 0 auto;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 0.4em;
-    background: var(--secondary_bg_color);
-}
-
 #contact_and_download_cv_buttons {
     display: flex;
     flex-flow: row wrap;
