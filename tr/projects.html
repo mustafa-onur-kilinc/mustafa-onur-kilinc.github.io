@@ -1,0 +1,132 @@
+<!--
+Resources used to write this file:
+HTML cheatsheet for syntax and common tasks 2025,
+MDN contributors, accessed 16 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet>
+
+Creating links 2025, MDN contributors, accessed 17 October 2026,
+<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links>
+
+lovesrayray2018 2022, "How do I link between HTML pages on a website?",
+Reddit, Inc., accessed 17 October 2026,
+<https://www.reddit.com/r/learnprogramming/comments/vrb4wu/comment/ieu3sbk/>
+
+<footer> HTML footer element 2026, MDN contributors, accessed 19 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer>
+
+manaschhabra2 2025, "How to Add Link to HTML Button?", Sanchhaya Education Private Limited, accessed 20 October 2026,
+<https://www.geeksforgeeks.org/html/how-to-create-an-html-button-that-acts-like-a-link/>
+
+Muhammad Usman 2025, "Building a Smooth Dark/Light Mode Switch with Modern CSS Features", 
+DEV Community, accessed 25 October 2026,
+<https://dev.to/web_dev-usman/building-a-smooth-darklight-mode-switch-with-modern-css-features-3jlc>
+
+Andrea Orivati 2026, "How to Copyright your Website", accessed 25 October 2026,
+<https://www.iubenda.com/en/blog/how-to-copyright-your-website-2/>
+-->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mustafa Onur KILINÇ - Bilgisayar Mühendisi</title>
+    <link rel="stylesheet" href="../static/style.css"/>
+</head>
+<body>
+  <header class="glass-card">
+    <div class="header_element_flexbox" id="website_logo">
+      <a href="./index.html">Mustafa Onur KILINÇ</a>
+    </div>
+
+    <nav class="header_element_flexbox" id="navigation_links">
+      <a href="./about.html">Hakkımda</a>
+      <a href="./about.html#experience">Deneyim</a>
+      <a href="./about.html#skills">Yetenekler</a>
+      <a href="./projects.html">Projeler</a>
+      <a href="./contact.html">İletişim</a>
+    </nav>
+
+    <div class="header_element_flexbox" id="quick_settings">
+      <input type="checkbox" id="dark_mode_toggle">
+      <label for="dark_mode_toggle" class="toggle"></label>
+      <a href="../projects.html">EN</a>
+    </div>
+  </header>
+
+  <h3 class="color_secondary">Bölüm 2</h3>
+  <h1 class="color_primary">Projeler</h1>
+
+  <div id="all_projects">
+    <div class="card project_card padding-sm">
+      <h2 class="color_surface_text">Proje 1</h2>
+
+      <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
+
+      <ul class="list">
+        <li class="list__element list__element--border">Lorem</li>
+        <li class="list__element list__element--border">Ipsum</li>
+        <li class="list__element list__element--border">Dolor</li>
+        <li class="list__element list__element--border">Amet</li>
+      </ul>
+
+      <div class="project_source_button">
+        <a href="./projects.html">
+          <button class="button button_medium button_secondary padding-xs" type="button">
+            Kaynak
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card project_card padding-sm">
+      <h2 class="color_surface_text">Proje 2</h2>
+
+      <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
+
+      <ul class="list">
+        <li class="list__element list__element--border">Lorem</li>
+        <li class="list__element list__element--border">Ipsum</li>
+        <li class="list__element list__element--border">Dolor</li>
+        <li class="list__element list__element--border">Amet</li>
+      </ul>
+
+      <div class="project_source_button">
+        <a href="./projects.html">
+          <button class="button button_medium button_secondary padding-xs" type="button">
+            Kaynak
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card project_card padding-sm">
+      <h2 class="color_surface_text">Proje 3</h2>
+
+      <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
+
+      <ul class="list">
+        <li class="list__element list__element--border">Lorem</li>
+        <li class="list__element list__element--border">Ipsum</li>
+        <li class="list__element list__element--border">Dolor</li>
+        <li class="list__element list__element--border">Amet</li>
+      </ul>
+
+      <div class="project_source_button">
+        <a href="./projects.html">
+          <button class="button button_medium button_secondary padding-xs" type="button">
+            Kaynak
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="padding-xs">
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">
+      Email ikonları Flaticon'dan Magnific tarafından oluşturuldu
+    </a>
+    <br>
+    <p>© 2026 Mustafa Onur Kılınç</p>
+  </footer>
+</body>
+</html>
