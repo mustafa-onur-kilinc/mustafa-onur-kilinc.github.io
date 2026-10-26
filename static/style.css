@@ -603,6 +603,8 @@ header {
     display: flex;
     flex-flow: row wrap;
     flex: 0 1 auto;
+
+    justify-content: space-between;
     column-gap: 1em;
 }
 
