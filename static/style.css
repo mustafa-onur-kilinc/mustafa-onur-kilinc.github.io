@@ -118,6 +118,9 @@
  *
  * Chris Coyier 2016, "Sticky Footer, Five Ways", accessed 26 October 2026,
  * <https://css-tricks.com/couple-takes-sticky-footer/>
+ * 
+ * Alexander Sandberg 2019, "theme-switcher/style.css", GitHub, Inc., accessed 26 October 2026,
+ * <https://github.com/alexandersandberg/theme-switcher/blob/master/style.css>
  */
 
 /* || General */
@@ -202,39 +205,27 @@ body {
 
 /* Dark Mode Toggle */
 #dark_mode_toggle {
-    display: none;
+position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
 .toggle {
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-    border-radius: 30px;
-    position: relative;
     cursor: pointer;
-    margin-right: 0.5em;
-
-    background: var(--toggle-bg);
-    transition: background-color 0.3s;
+    display: flex;
 }
 
 .toggle::before {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    
     content: var(--toggle-icon-default);
-    background: var(--toggle-circle);
+    font-size: 1.5em;
     transition: transform 0.3s;
 }
 
 #dark_mode_toggle:checked + .toggle::before {
     content: var(--toggle-icon-switched);
-    transform: translateX(30px);
-    transition: transform 0.3s, content 0.3s;
+    transition: content 0.3s;
 }
 
 h1, h2, h3 {
@@ -361,6 +352,7 @@ header {
 
 #quick_settings {
     justify-content: end;
+    column-gap: 0.5em;
 
     margin-block-start: 1em;
     margin-block-end: 1em;
