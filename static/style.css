@@ -602,7 +602,7 @@ header {
 #contact_methods {
     display: flex;
     flex-flow: row nowrap;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     justify-content: space-between
 }
 
