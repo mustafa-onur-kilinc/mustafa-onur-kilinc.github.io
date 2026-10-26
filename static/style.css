@@ -588,14 +588,43 @@ header {
 
 #all_skills {
     display: flex;
-    flex-flow: row wrap;
-    flex: 1 1 auto;
+    flex-flow: column wrap;
+    flex: 0 1 auto;
     justify-content: space-between;
     row-gap: 1.25em;
 }
 
-.skillset {
-    width: 45%;
+.skills_category {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 auto;
+    row-gap: 1em;
+}
+
+.skill_cards {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 auto;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.skill_card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.skill_logo {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.4em;
+
+    background-color: rgba(255, 255, 255, 1.0);
 }
 
 /* || Projects */
