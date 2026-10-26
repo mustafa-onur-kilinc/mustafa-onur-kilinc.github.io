@@ -112,6 +112,12 @@
  * 
  * Mohamed Adhuham 2020, "Dark Mode in CSS Guide", accessed 25 October 2026,
  * <https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/>
+ * 
+ * Alternate method 2025, MDN contributors, accessed 26 October 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Sticky_footers#alternate_method>
+ *
+ * Chris Coyier 2016, "Sticky Footer, Five Ways", accessed 26 October 2026,
+ * <https://css-tricks.com/couple-takes-sticky-footer/>
  */
 
 /* || General */
@@ -174,6 +180,10 @@
     }
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: var(--background_color);
     color: var(--text_color);
@@ -181,6 +191,13 @@ body {
 
     padding-left: 1.25em;
     padding-right: 1.25em;
+}
+
+.wrapper {
+    min-height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 /* Dark Mode Toggle */
@@ -261,7 +278,11 @@ h2 {
 }
 
 footer {
+    background-color: var(--background_color);
     text-align: center;
+
+    flex-shrink: 0;
+    margin-top: auto;
 }
 
 .glass-card {
