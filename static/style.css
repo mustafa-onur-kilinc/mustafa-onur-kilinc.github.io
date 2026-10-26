@@ -136,15 +136,15 @@
     --toggle-icon-default: "☀️";
     
     :has(#dark_mode_toggle:checked) {
-        --background_color: rgba(17, 18, 19, 1.0);
-        --surface_color: rgba(28, 29, 32, 1.0);
-        --primary_color: rgba(55, 135, 232, 1.0);
-        --secondary_color: rgba(95, 62, 215, 1.0);
-        --text_color: rgba(204, 205, 206, 1.0);
-        --surface_text_color: rgba(200, 207, 217, 1.0);
+        --background_color: rgba(0, 9, 37, 1.0);
+        --surface_color: rgba(0, 28, 65, 1.0);
+        --primary_color: rgba(118, 164, 223, 1.0);
+        --secondary_color: rgba(184, 134, 223, 1.0);
+        --text_color: rgba(210, 241, 255, 1.0);
+        --surface_text_color: rgba(177, 215, 255, 1.0);
         
-        --toggle-bg: rgb(78, 79, 80, 1.0);
-        --toggle-circle: rgba(17, 18, 19, 1.0);
+        --toggle-bg: rgb(177, 215, 255, 1.0);
+        --toggle-circle: rgba(0, 28, 65, 1.0);
 
         --toggle-icon-switched: "🌕";
     }
@@ -152,15 +152,15 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background_color: rgba(17, 18, 19, 1.0);
-        --surface_color: rgba(28, 29, 32, 1.0);
-        --primary_color: rgba(55, 135, 232, 1.0);
-        --secondary_color: rgba(95, 62, 215, 1.0);
-        --text_color: rgba(204, 205, 206, 1.0);
-        --surface_text_color: rgba(200, 207, 217, 1.0);
-
-        --toggle-bg: rgb(78, 79, 80, 1.0);
-        --toggle-circle: rgba(17, 18, 19, 1.0);
+        --background_color: rgba(0, 9, 37, 1.0);
+        --surface_color: rgba(0, 28, 65, 1.0);
+        --primary_color: rgba(118, 164, 223, 1.0);
+        --secondary_color: rgba(184, 134, 223, 1.0);
+        --text_color: rgba(210, 241, 255, 1.0);
+        --surface_text_color: rgba(177, 215, 255, 1.0);
+        
+        --toggle-bg: rgb(177, 215, 255, 1.0);
+        --toggle-circle: rgba(0, 28, 65, 1.0);
 
         --toggle-icon-default: "🌕";
         
