@@ -264,8 +264,6 @@ footer {
     text-align: center;
 }
 
-/* || Utilities */
-
 .glass-card {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
@@ -310,6 +308,61 @@ footer {
         rgba(255, 255, 255, 0.3)
     );
 }
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+
+    position: sticky;
+    top: 0;
+}
+
+.header_element_flexbox {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+#website_logo {
+    justify-content: start;
+}
+
+#navigation_links {
+    justify-content: space-between;
+}
+
+#quick_settings {
+    justify-content: end;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.contact_image {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.4em;
+
+    background: var(--primary_color);
+    transition: background-color 0.3s;
+}
+
+.contact_image--secondary {
+    background: var(--secondary_color);
+    transition: background-color 0.3s;
+}
+
+/* || Utilities */
 
 .button_large {
     margin-top: 0.5em;
@@ -392,58 +445,6 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: background-image 0.3s, color 0.3s;
-}
-
-/* || Sitewide */
-
-header {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-left: 1.25em;
-    padding-right: 1.25em;
-
-    position: sticky;
-    top: 0;
-}
-
-.header_element_flexbox {
-    display: flex;
-    flex-flow: row nowrap;
-    flex: 1 1 auto;
-    align-items: center;
-}
-
-#website_logo {
-    justify-content: start;
-}
-
-#navigation_links {
-    justify-content: space-between;
-}
-
-#quick_settings {
-    justify-content: end;
-}
-
-.contact_image {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 0 0 auto;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 0.4em;
-
-    background: var(--primary_color);
-    transition: background-color 0.3s;
-}
-
-.contact_image--secondary {
-    background: var(--secondary_color);
-    transition: background-color 0.3s;
 }
 
 /* || Home */
