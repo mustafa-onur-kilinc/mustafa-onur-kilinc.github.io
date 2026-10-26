@@ -23,6 +23,12 @@ DEV Community, accessed 25 October 2026,
 
 Andrea Orivati 2026, "How to Copyright your Website", accessed 25 October 2026,
 <https://www.iubenda.com/en/blog/how-to-copyright-your-website-2/>
+
+Alternate method 2025, MDN contributors, accessed 26 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Sticky_footers#alternate_method>
+
+Chris Coyier 2016, "Sticky Footer, Five Ways", accessed 26 October 2026,
+<https://css-tricks.com/couple-takes-sticky-footer/>
 -->
 
 <!DOCTYPE html>
@@ -33,100 +39,115 @@ Andrea Orivati 2026, "How to Copyright your Website", accessed 25 October 2026,
     <link rel="stylesheet" href="../static/style.css"/>
 </head>
 <body>
-  <header class="glass-card">
-    <div class="header_element_flexbox" id="website_logo">
-      <a href="./index.html">Mustafa Onur KILINÇ</a>
-    </div>
-
-    <nav class="header_element_flexbox" id="navigation_links">
-      <a href="./about.html">Hakkımda</a>
-      <a href="./about.html#experience">Deneyim</a>
-      <a href="./about.html#skills">Yetenekler</a>
-      <a href="./projects.html">Projeler</a>
-      <a href="./contact.html">İletişim</a>
-    </nav>
-
-    <div class="header_element_flexbox" id="quick_settings">
-      <input type="checkbox" id="dark_mode_toggle">
-      <label for="dark_mode_toggle" class="toggle"></label>
-      <a href="../projects.html">EN</a>
-    </div>
-  </header>
-
-  <h3 class="color_secondary">Bölüm 2</h3>
-  <h1 class="color_primary">Projeler</h1>
-
-  <div id="all_projects">
-    <div class="card project_card padding-sm">
-      <h2 class="color_surface_text">Proje 1</h2>
-
-      <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
-
-      <ul class="list">
-        <li class="list__element list__element--border">Lorem</li>
-        <li class="list__element list__element--border">Ipsum</li>
-        <li class="list__element list__element--border">Dolor</li>
-        <li class="list__element list__element--border">Amet</li>
-      </ul>
-
-      <div class="project_source_button">
-        <a href="./projects.html">
-          <button class="button button_medium button_secondary padding-xs" type="button">
-            Kaynak
-          </button>
-        </a>
+  <div class="wrapper">
+    <header class="glass-card">
+      <div class="header_element_flexbox" id="website_logo">
+        <a href="./index.html">Mustafa Onur KILINÇ</a>
+      </div>
+  
+      <nav class="header_element_flexbox" id="navigation_links">
+        <a href="./about.html">Hakkımda</a>
+        <a href="./about.html#experience">Deneyim</a>
+        <a href="./about.html#skills">Yetenekler</a>
+        <a href="./projects.html">Projeler</a>
+        <a href="./contact.html">İletişim</a>
+      </nav>
+  
+      <div class="header_element_flexbox" id="quick_settings">
+        <input type="checkbox" id="dark_mode_toggle">
+        <label for="dark_mode_toggle" class="toggle"></label>
+        <a href="../projects.html">EN</a>
+      </div>
+    </header>
+  
+    <h3 class="color_secondary">Bölüm 2</h3>
+    <h1 class="color_primary">Projeler</h1>
+  
+    <div id="all_projects">
+      <div class="card project_card padding-sm">
+        <h2 class="color_surface_text">Proje 1</h2>
+  
+        <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
+  
+        <ul class="list">
+          <li class="list__element list__element--border">Lorem</li>
+          <li class="list__element list__element--border">Ipsum</li>
+          <li class="list__element list__element--border">Dolor</li>
+          <li class="list__element list__element--border">Amet</li>
+        </ul>
+  
+        <div class="project_source_button">
+          <a href="./projects.html">
+            <button class="button button_medium button_secondary padding-xs" type="button">
+              Kaynak
+            </button>
+          </a>
+        </div>
+      </div>
+  
+      <div class="card project_card padding-sm">
+        <h2 class="color_surface_text">Proje 2</h2>
+  
+        <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
+  
+        <ul class="list">
+          <li class="list__element list__element--border">Lorem</li>
+          <li class="list__element list__element--border">Ipsum</li>
+          <li class="list__element list__element--border">Dolor</li>
+          <li class="list__element list__element--border">Amet</li>
+        </ul>
+  
+        <div class="project_source_button">
+          <a href="./projects.html">
+            <button class="button button_medium button_secondary padding-xs" type="button">
+              Kaynak
+            </button>
+          </a>
+        </div>
+      </div>
+  
+      <div class="card project_card padding-sm">
+        <h2 class="color_surface_text">Proje 3</h2>
+  
+        <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
+  
+        <ul class="list">
+          <li class="list__element list__element--border">Lorem</li>
+          <li class="list__element list__element--border">Ipsum</li>
+          <li class="list__element list__element--border">Dolor</li>
+          <li class="list__element list__element--border">Amet</li>
+        </ul>
+  
+        <div class="project_source_button">
+          <a href="./projects.html">
+            <button class="button button_medium button_secondary padding-xs" type="button">
+              Kaynak
+            </button>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="card project_card padding-sm">
-      <h2 class="color_surface_text">Proje 2</h2>
+    <footer class="padding-xs">
+      <nav>
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./about.html">Hakkımda</a>
+        <a href="./about.html#experience">Deneyim</a>
+        <a href="./about.html#skills">Yetenekler</a>
+        <a href="./projects.html">Projeler</a>
+        <a href="./contact.html">İletişim</a>
+      </nav>
 
-      <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
+      <br>
 
-      <ul class="list">
-        <li class="list__element list__element--border">Lorem</li>
-        <li class="list__element list__element--border">Ipsum</li>
-        <li class="list__element list__element--border">Dolor</li>
-        <li class="list__element list__element--border">Amet</li>
-      </ul>
+      <a href="https://www.flaticon.com/free-icons/email" title="email icons">
+        Email ikonları Flaticon'dan Magnific tarafından oluşturuldu
+      </a>
 
-      <div class="project_source_button">
-        <a href="./projects.html">
-          <button class="button button_medium button_secondary padding-xs" type="button">
-            Kaynak
-          </button>
-        </a>
-      </div>
-    </div>
-
-    <div class="card project_card padding-sm">
-      <h2 class="color_surface_text">Proje 3</h2>
-
-      <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
-
-      <ul class="list">
-        <li class="list__element list__element--border">Lorem</li>
-        <li class="list__element list__element--border">Ipsum</li>
-        <li class="list__element list__element--border">Dolor</li>
-        <li class="list__element list__element--border">Amet</li>
-      </ul>
-
-      <div class="project_source_button">
-        <a href="./projects.html">
-          <button class="button button_medium button_secondary padding-xs" type="button">
-            Kaynak
-          </button>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <footer class="padding-xs">
-    <a href="https://www.flaticon.com/free-icons/email" title="email icons">
-      Email ikonları Flaticon'dan Magnific tarafından oluşturuldu
-    </a>
-    <br>
-    <p>© 2026 Mustafa Onur Kılınç</p>
-  </footer>
+      <br>
+      
+      <p>© 2026 Mustafa Onur Kılınç</p>
+    </footer>
+  </div>  
 </body>
 </html>

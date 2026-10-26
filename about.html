@@ -22,6 +22,12 @@ DEV Community, accessed 25 October 2026,
 
 Andrea Orivati 2026, "How to Copyright your Website", accessed 25 October 2026,
 <https://www.iubenda.com/en/blog/how-to-copyright-your-website-2/>
+
+Alternate method 2025, MDN contributors, accessed 26 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Sticky_footers#alternate_method>
+
+Chris Coyier 2016, "Sticky Footer, Five Ways", accessed 26 October 2026,
+<https://css-tricks.com/couple-takes-sticky-footer/>
 -->
 
 <!DOCTYPE html>
@@ -32,164 +38,179 @@ Andrea Orivati 2026, "How to Copyright your Website", accessed 25 October 2026,
     <link rel="stylesheet" href="./static/style.css"/>
 </head>
 <body>
-  <header class="glass-card">
-    <div class="header_element_flexbox" id="website_logo">
-      <a href="./index.html">Mustafa Onur KILINÇ</a>
-    </div>
-
-    <nav class="header_element_flexbox" id="navigation_links">
-      <a href="./about.html">About</a>
-      <a href="./about.html#experience">Experience</a>
-      <a href="./about.html#skills">Skills</a>
-      <a href="./projects.html">Projects</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
-
-    <div class="header_element_flexbox" id="quick_settings">
-      <input type="checkbox" id="dark_mode_toggle">
-      <label for="dark_mode_toggle" class="toggle"></label>
-      <a href="./tr/about.html">TR</a>
-    </div>
-  </header>
-
-  <section>
-    <h3 class="color_secondary">Chapter 1</h3>
-    <h1 class="color_primary">About Me</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Nulla iaculis lectus vestibulum euismod lobortis.
-      Nam vel lacus et sapien tempus blandit. Nullam sodales tempor ligula.
-    </p>
-
-    <p>
-      Aenean tempus, purus et ultrices convallis, dolor nisl tristique urna,
-      nec aliquam massa ipsum ac leo. Etiam dictum pulvinar elementum.
-      Etiam tristique nunc ut lorem consequat rhoncus.
-    </p>
-
-    <p>
-      Aenean luctus vehicula dolor, sed ullamcorper dui tempus id.
-      Nullam accumsan condimentum venenatis. Praesent egestas suscipit mauris
-      quis sodales. Nunc finibus est vel.
-    </p>
-  </section>
-
-  <section id="experience">
-    <h3 class="color_secondary">Chapter 1.1</h3>
-    <h2 class="color_primary chapter_title">Experience</h2>
-
-    <div class="timeline">
-      <div class="experience_entry">
-        <div class="experience_header">
-          <div class="experience_title">
-            <p class="working_title">Lane Detection Deparment Member</p>
-            <p class="company_name">YTÜ Alternatif Enerjili Sistemler Kulübü</p>
+  <div class="wrapper">
+    <header class="glass-card">
+      <div class="header_element_flexbox" id="website_logo">
+        <a href="./index.html">Mustafa Onur KILINÇ</a>
+      </div>
+      
+      <nav class="header_element_flexbox" id="navigation_links">
+        <a href="./about.html">About</a>
+        <a href="./about.html#experience">Experience</a>
+        <a href="./about.html#skills">Skills</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      
+      <div class="header_element_flexbox" id="quick_settings">
+        <input type="checkbox" id="dark_mode_toggle">
+        <label for="dark_mode_toggle" class="toggle"></label>
+        <a href="./tr/about.html">TR</a>
+      </div>
+    </header>
+    
+    <section>
+      <h3 class="color_secondary">Chapter 1</h3>
+      <h1 class="color_primary">About Me</h1>
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nulla iaculis lectus vestibulum euismod lobortis.
+        Nam vel lacus et sapien tempus blandit. Nullam sodales tempor ligula.
+      </p>
+      
+      <p>
+        Aenean tempus, purus et ultrices convallis, dolor nisl tristique urna,
+        nec aliquam massa ipsum ac leo. Etiam dictum pulvinar elementum.
+        Etiam tristique nunc ut lorem consequat rhoncus.
+      </p>
+      
+      <p>
+        Aenean luctus vehicula dolor, sed ullamcorper dui tempus id.
+        Nullam accumsan condimentum venenatis. Praesent egestas suscipit mauris
+        quis sodales. Nunc finibus est vel.
+      </p>
+    </section>
+    
+    <section id="experience">
+      <h3 class="color_secondary">Chapter 1.1</h3>
+      <h2 class="color_primary chapter_title">Experience</h2>
+      
+      <div class="timeline">
+        <div class="experience_entry">
+          <div class="experience_header">
+            <div class="experience_title">
+              <p class="working_title">Lane Detection Deparment Member</p>
+              <p class="company_name">YTÜ Alternatif Enerjili Sistemler Kulübü</p>
+            </div>
+            
+            <span class="time_of_working">June 2023<br>August 2024</span>
           </div>
-
-          <span class="time_of_working">June 2023<br>August 2024</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
+            Orci varius natoque.
+          </p>
+          <ul class="list">
+            <li class="list__element">Lorem</li>
+            <li class="list__element">Ipsum</li>
+            <li class="list__element">Dolor</li>
+            <li class="list__element">Amet</li>
+          </ul>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
-          Orci varius natoque.
-        </p>
-        <ul class="list">
-          <li class="list__element">Lorem</li>
-          <li class="list__element">Ipsum</li>
-          <li class="list__element">Dolor</li>
-          <li class="list__element">Amet</li>
-        </ul>
-      </div>
-
-      <div class="experience_entry">
-        <div class="experience_header">
-          <div class="experience_title">
-            <p class="working_title">Process and Customer Development Department Intern</p>
-            <p class="company_name">Mars Logistics</p>
+        
+        <div class="experience_entry">
+          <div class="experience_header">
+            <div class="experience_title">
+              <p class="working_title">Process and Customer Development Department Intern</p>
+              <p class="company_name">Mars Logistics</p>
+            </div>
+            
+            <span class="time_of_working">October 2023<br>December 2023</span>
           </div>
-
-          <span class="time_of_working">October 2023<br>December 2023</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
+            Orci varius natoque.
+          </p>
+          <ul class="list">
+            <li class="list__element">Lorem</li>
+            <li class="list__element">Ipsum</li>
+            <li class="list__element">Dolor</li>
+            <li class="list__element">Amet</li>
+          </ul>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
-          Orci varius natoque.
-        </p>
-        <ul class="list">
-          <li class="list__element">Lorem</li>
-          <li class="list__element">Ipsum</li>
-          <li class="list__element">Dolor</li>
-          <li class="list__element">Amet</li>
-        </ul>
-      </div>
-
-      <div class="experience_entry">
-        <div class="experience_header">
-          <div class="experience_title">
-            <p class="working_title">Team Member</p>
-            <p class="company_name">YTÜ Alternatif Enerjili Sistemler Kulübü</p>
+        
+        <div class="experience_entry">
+          <div class="experience_header">
+            <div class="experience_title">
+              <p class="working_title">Team Member</p>
+              <p class="company_name">YTÜ Alternatif Enerjili Sistemler Kulübü</p>
+            </div>
+            
+            <span class="time_of_working">October 2022<br>June 2023</span>
           </div>
-
-          <span class="time_of_working">October 2022<br>June 2023</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
+            Orci varius natoque.
+          </p>
+          <ul class="list">
+            <li class="list__element">Lorem</li>
+            <li class="list__element">Ipsum</li>
+            <li class="list__element">Dolor</li>
+            <li class="list__element">Amet</li>
+          </ul>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus sagittis posuere nulla, at iaculis nibh ornare quis.
-          Orci varius natoque.
-        </p>
-        <ul class="list">
-          <li class="list__element">Lorem</li>
-          <li class="list__element">Ipsum</li>
-          <li class="list__element">Dolor</li>
-          <li class="list__element">Amet</li>
-        </ul>
       </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h3 class="color_secondary">Chapter 1.2</h3>
-    <h2 class="color_primary chapter_title">Skills</h2>
-
-    <div id="all_skills">
-      <div class="card skillset padding-sm">
-        <h3 class="color_surface_text">Programming Languages</h3>
-        <ul class="list">
-          <li class="list__element list__element--border">C/C++</li>
-          <li class="list__element list__element--border">Python</li>
-          <li class="list__element list__element--border">Java</li>
-        </ul>
+    </section>
+    
+    <section id="skills">
+      <h3 class="color_secondary">Chapter 1.2</h3>
+      <h2 class="color_primary chapter_title">Skills</h2>
+      
+      <div id="all_skills">
+        <div class="card skillset padding-sm">
+          <h3 class="color_surface_text">Programming Languages</h3>
+          <ul class="list">
+            <li class="list__element list__element--border">C/C++</li>
+            <li class="list__element list__element--border">Python</li>
+            <li class="list__element list__element--border">Java</li>
+          </ul>
+        </div>
+        
+        <div class="card skillset padding-sm">
+          <h3 class="color_surface_text">Tools and Platforms</h3>
+          <ul class="list">
+            <li class="list__element list__element--border">Bash</li>
+            <li class="list__element list__element--border">SQL</li>
+            <li class="list__element list__element--border">ROS</li>
+            <li class="list__element list__element--border">Docker</li>
+            <li class="list__element list__element--border">Git</li>
+            <li class="list__element list__element--border">Canva</li>
+          </ul>
+        </div>
+        
+        <div class="card skillset padding-sm">
+          <h3 class="color_surface_text">Soft Skills</h3>
+          <ul class="list">
+            <li class="list__element list__element--border">Graphic Design</li>
+            <li class="list__element list__element--border">Teamwork</li>
+          </ul>
+        </div>
       </div>
+    </section>
+    
+    <footer class="padding-xs">
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./about.html#experience">Experience</a>
+        <a href="./about.html#skills">Skills</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
 
-      <div class="card skillset padding-sm">
-        <h3 class="color_surface_text">Tools and Platforms</h3>
-        <ul class="list">
-          <li class="list__element list__element--border">Bash</li>
-          <li class="list__element list__element--border">SQL</li>
-          <li class="list__element list__element--border">ROS</li>
-          <li class="list__element list__element--border">Docker</li>
-          <li class="list__element list__element--border">Git</li>
-          <li class="list__element list__element--border">Canva</li>
-        </ul>
-      </div>
-
-      <div class="card skillset padding-sm">
-        <h3 class="color_surface_text">Soft Skills</h3>
-        <ul class="list">
-          <li class="list__element list__element--border">Graphic Design</li>
-          <li class="list__element list__element--border">Teamwork</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <footer class="padding-xs">
-    <a href="https://www.flaticon.com/free-icons/email" title="email icons">
-      Email icons created by Magnific - Flaticon
-    </a>
-    <br>
-    <p>© 2026 Mustafa Onur Kılınç</p>
-  </footer>
+      <br>
+      
+      <a href="https://www.flaticon.com/free-icons/email" title="email icons">
+        Email icons created by Magnific - Flaticon
+      </a>
+      
+      <br>
+      
+      <p>© 2026 Mustafa Onur Kılınç</p>
+    </footer>
+  </div>
 </body>
 </html>
