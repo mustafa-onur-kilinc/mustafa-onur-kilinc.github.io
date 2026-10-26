@@ -279,6 +279,7 @@ h2 {
 
 footer {
     background-color: var(--background_color);
+    transition: background_color 0.3s;
     text-align: center;
 
     flex-shrink: 0;
