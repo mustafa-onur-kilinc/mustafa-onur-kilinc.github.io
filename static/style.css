@@ -616,6 +616,18 @@ header {
     width: 25%;
 }
 
+.project_image {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.4em;
+
+    width: stretch;
+}
+
 .project_source_button {
     align-self: end;
 }
