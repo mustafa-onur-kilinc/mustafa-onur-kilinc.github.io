@@ -334,6 +334,37 @@ footer {
     transition: 0.3s;
 }
 
+.copyright_info {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+    position: relative;
+
+    margin-block-start: 1em;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright_info > a {
+    margin-block-start: 1em;
+
+    color: var(--text_color);
+    transition: color 0.3s;
+}
+
+.copyright_info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: stretch;
+
+    background-color: var(--text_color);
+    opacity: 60%;
+    transition: background-color 0.3s;
+}
+
 .glass-card {
     background-color: var(--glass_bg_color);
     backdrop-filter: blur(20px);
