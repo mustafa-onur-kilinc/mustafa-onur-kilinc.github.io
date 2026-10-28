@@ -294,21 +294,42 @@ h2 {
 footer {
     background-color: var(--background_color);
     transition: background-color 0.3s;
-    
+
     display: flex;
-    flex-flow: row wrap;
-    flex-grow: 0 1 auto;
-    justify-content: center;
+    flex-flow: column wrap;
+    flex: 1 0 auto;
 
     margin-top: auto;
+}
+
+.footer_top_part {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+
+    justify-content: space-between;
+}
+
+.name_and_slogan {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 1 auto;
+
+    max-width: 33%;
+
+    justify-content: start;
+    align-items: flex-start;
 }
 
 .navigation_links_footer {
     display: flex;
     flex-flow: column wrap;
-    text-align: left;
+    flex: 0 1 auto;
 
-    width: 50%;
+    max-width: 33%;
+
+    justify-content: start;
+    align-items: flex-start;
 }
 
 .navigation_links_footer > a {
@@ -323,9 +344,10 @@ footer {
     flex-flow: column wrap;
     flex: 0 1 auto;
 
-    align-items: flex-start;
+    max-width: 33%;
 
-    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .image_sources > a {
@@ -350,8 +372,6 @@ footer {
     flex-flow: column wrap;
     flex: 1 1 auto;
     position: relative;
-
-    margin-block-start: 1em;
 
     justify-content: center;
     align-items: center;
