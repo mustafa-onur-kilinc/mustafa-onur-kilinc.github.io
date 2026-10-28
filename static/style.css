@@ -571,7 +571,6 @@ header {
 }
 
 .experience_entry {
-    padding-left: 0.5em;
     position: relative;
     align-items: baseline;
 }
@@ -582,7 +581,7 @@ header {
     width: 0.4em;
     height: 0.4em;
     left: -1em;
-    top: 0.4em;
+    top: 1em;
     border-radius: 50%;
     z-index: 1;
 
@@ -614,7 +613,7 @@ header {
 .company_name {
     font-size: 1.125em;
     
-    color: var(--primary_color);
+    color: var(--secondary_color);
     transition: color 0.3s;
 
     margin-block: 0;
