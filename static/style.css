@@ -334,7 +334,19 @@ footer {
     transition: 0.3s;
 }
 
-.copyright_info {
+.footer_separator {
+    height: 1px;
+    width: stretch;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
+    background-color: var(--text_color);
+    opacity: 60%;
+    transition: background-color 0.3s;
+}
+
+.footer_bottom_part {
     display: flex;
     flex-flow: column wrap;
     flex: 1 1 auto;
@@ -351,18 +363,6 @@ footer {
 
     color: var(--text_color);
     transition: color 0.3s;
-}
-
-.copyright_info::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 1px;
-    width: stretch;
-
-    background-color: var(--text_color);
-    opacity: 60%;
-    transition: background-color 0.3s;
 }
 
 .glass-card {
