@@ -358,9 +358,7 @@ footer {
     align-items: center;
 }
 
-.copyright_info > a {
-    margin-block-start: 1em;
-
+.footer_bottom_part > a {
     color: var(--text_color);
     transition: color 0.3s;
 }
