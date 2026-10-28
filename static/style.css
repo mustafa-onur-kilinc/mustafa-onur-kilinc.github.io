@@ -555,7 +555,7 @@ header {
 
     display: flex;
     flex-flow: column wrap;
-    row-gap: 3em;
+    row-gap: 2em;
 }
 
 .timeline::before {
