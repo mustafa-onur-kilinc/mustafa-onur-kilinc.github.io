@@ -376,6 +376,13 @@ header {
     align-items: center;
 }
 
+.header_element_flexbox > a {
+    text-decoration: none;
+
+    color: var(--text_color);
+    transition: color 0.3s;
+}
+
 #website_logo {
     justify-content: start;
 }
