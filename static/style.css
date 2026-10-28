@@ -297,7 +297,7 @@ footer {
 
     display: flex;
     flex-flow: column wrap;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 
     margin-top: auto;
 }
@@ -305,7 +305,7 @@ footer {
 .footer_top_part {
     display: flex;
     flex-flow: row wrap;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
 
     justify-content: space-between;
 }
@@ -370,7 +370,7 @@ footer {
 .footer_bottom_part {
     display: flex;
     flex-flow: column wrap;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     position: relative;
 
     justify-content: center;
