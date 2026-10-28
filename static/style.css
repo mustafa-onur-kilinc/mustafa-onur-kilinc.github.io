@@ -281,6 +281,36 @@ footer {
     margin-top: auto;
 }
 
+.navigation_links_footer {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+
+    width: 50%;
+}
+
+.navigation_links_footer > a {
+    text-decoration: none;
+
+    color: var(--text_color);
+    transition: color 0.3s;
+}
+
+.image_sources {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 1 auto;
+
+    align-items: flex-start;
+
+    width: 50%;
+}
+
+.image_sources > a {
+    color: var(--text_color);
+    transition: 0.3s;
+}
+
 .glass-card {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
