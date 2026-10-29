@@ -50,6 +50,12 @@ accessed 29 October 2026, <https://stackoverflow.com/a/21103679>
 
 yuvrajghule 2025, "How to Auto Resize Image in CSS FlexBox Layout and Keeping Aspect Ratio?", Sanchhaya Education Private Limited, 
 accessed 29 October 2026, <https://www.geeksforgeeks.org/html/how-to-auto-resize-image-in-css-flexbox-layout-and-keeping-aspect-ratio/>
+
+Alexander Sandberg 2019, "theme-switcher/index.html", GitHub, Inc., accessed 26 October 2026,
+<https://github.com/alexandersandberg/theme-switcher/blob/master/index.html>
+
+Document: querySelector() method 2026, MDN contributors, accessed 29 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector>
 -->
 
 <!DOCTYPE html>
@@ -169,5 +175,23 @@ accessed 29 October 2026, <https://www.geeksforgeeks.org/html/how-to-auto-resize
       </div>
     </footer>
   </div>
+
+  <script>
+    // This code is only used to remember theme selection between page loads
+    const themeSwitch = document.querySelector("#dark_mode_toggle");
+    themeSwitch.checked = localStorage.getItem("isThemeSwitched") === "true";
+
+    themeSwitch.addEventListener("change", function(e) {
+      // Add item to localstorage
+      if (e.currentTarget.checked === true) {
+        localStorage.setItem("isThemeSwitched", "true");
+      }
+
+      // Remove item if theme is switched back to normal
+      else {
+        localStorage.removeItem("isThemeSwitched");
+      }
+    });
+  </script>
 </body>
 </html>
