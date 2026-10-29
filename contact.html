@@ -56,6 +56,9 @@ Alexander Sandberg 2019, "theme-switcher/index.html", GitHub, Inc., accessed 26 
 
 Document: querySelector() method 2026, MDN contributors, accessed 29 October 2026,
 <https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector>
+
+Oguzcan 2026, "How to Send an HTML Form to Email Without a Server", accessed 29 October 2026,
+<https://forminit.com/blog/html-form-send-email-without-server/>
 -->
 
 <!DOCTYPE html>
@@ -125,31 +128,34 @@ Document: querySelector() method 2026, MDN contributors, accessed 29 October 202
         </div>
         
         <div id="contact_form" class="card padding-sm">
-          <form method="get">
+          <form action="https://api.web3forms.com/submit" method="POST">
             <fieldset>
               <legend>Contact Me</legend>
+              
+              <input type="hidden" name="access_key" value="18d8c6af-3e72-4d04-8175-591832c72d4e">
+
               <div>
                 <label for="name">Your Name</label><br>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" placeholder="John DOE" required>
               </div>
               
               <div>
                 <label for="email">Your E-mail</label><br>
-                <input type="text" name="email" id="email" required>
+                <input type="text" name="email" id="email" placeholder="example@mail.com" required>
               </div>
               
               <div>
                 <label for="subject">Subject</label><br>
-                <input type="text" name="subject" id="subject" required>
+                <input type="text" name="subject" placeholder="Hello There" id="subject">
               </div>
               
               <div>
                 <label for="message">Message</label><br>
-                <input type="text" name="message" id="message" required>
+                <textarea type="text" name="message" id="message" placeholder="Good morning..." required></textarea>
               </div>
               
               <div>
-                <button type="submit" disabled>Coming Soon-ish</button>
+                <button type="submit">Submit</button>
               </div>
             </fieldset>
           </form>

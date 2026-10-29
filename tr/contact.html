@@ -56,6 +56,9 @@ Alexander Sandberg 2019, "theme-switcher/index.html", GitHub, Inc., accessed 26 
 
 Document: querySelector() method 2026, MDN contributors, accessed 29 October 2026,
 <https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector>
+
+Oguzcan 2026, "How to Send an HTML Form to Email Without a Server", accessed 29 October 2026,
+<https://forminit.com/blog/html-form-send-email-without-server/>
 -->
 
 <!DOCTYPE html>
@@ -125,31 +128,34 @@ Document: querySelector() method 2026, MDN contributors, accessed 29 October 202
         </div>
       
         <div id="contact_form" class="card padding-sm">
-          <form method="get">
+          <form action="https://api.web3forms.com/submit" method="POST">
             <fieldset>
               <legend>İletişime Geçin</legend>
+              
+              <input type="hidden" name="access_key" value="8e016b74-9c6b-43fc-899a-e4b882375243">
+
               <div>
                 <label for="name">Adınız</label><br>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" placeholder="Ali VELİ" required>
               </div>
               
               <div>
                 <label for="email">E-posta Adresiniz</label><br>
-                <input type="text" name="email" id="email" required>
+                <input type="text" name="email" id="email" placeholder="örnek@mail.com" required>
               </div>
               
               <div>
                 <label for="subject">Başlık</label><br>
-                <input type="text" name="subject" id="subject" required>
+                <input type="text" name="subject" id="subject" placeholder="İyi Günler">
               </div>
               
               <div>
                 <label for="message">Mesaj Metni</label><br>
-                <input type="text" name="message" id="message" required>
+                <textarea type="text" name="message" id="message" placeholder="İyi günler..." required></textarea>
               </div>
               
               <div>
-                <button type="submit" disabled>Yakında... Sayılır</button>
+                <button type="submit">Gönder</button>
               </div>
             </fieldset>
           </form>
