@@ -674,6 +674,17 @@ header {
     transition: color 0.3s;
 }
 
+#profile_picture {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 15em;
+
+    max-width: 20em;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
 /* || Experience */
 
 .timeline {
