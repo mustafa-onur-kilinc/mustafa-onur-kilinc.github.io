@@ -501,7 +501,7 @@ header {
     transition: transform 0.2s ease-in;
 }
 
-.navigation_link:hover::after {
+.animated_underline:hover::after {
     transform: scaleX(1);
 }
 
