@@ -264,7 +264,7 @@ body {
 
 /* Dark Mode Toggle */
 #dark_mode_toggle {
-position: absolute;
+    position: absolute;
     height: 1px;
     width: 1px;
     overflow: hidden;
