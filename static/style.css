@@ -464,11 +464,11 @@ header {
     justify-content: space-between;
 }
 
-.navigation_link {
+.animated_underline {
     position: relative;
 }
 
-.navigation_link::after {
+.animated_underline::after {
     content: '';
     position: absolute;
     width: 100%;
