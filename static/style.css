@@ -260,6 +260,7 @@ body {
 
     display: flex;
     flex-flow: column nowrap;
+    gap: 2em;
 }
 
 /* Dark Mode Toggle */
