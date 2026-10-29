@@ -136,6 +136,12 @@
  * 
  * CSS background-blend-mode Property n.d., Refsnes Data, accessed 29 October 2026,
  * <https://www.w3schools.com/cssref/pr_background-blend-mode.php>
+ * 
+ * Omega 2015, "Auto Resize Image in CSS FlexBox Layout and keeping Aspect Ratio?", Stack Exchange, Inc.,
+ * accessed 29 October 2026, <https://stackoverflow.com/a/21103679>
+ *
+ * yuvrajghule 2025, "How to Auto Resize Image in CSS FlexBox Layout and Keeping Aspect Ratio?", Sanchhaya Education Private Limited, 
+ * accessed 29 October 2026, <https://www.geeksforgeeks.org/html/how-to-auto-resize-image-in-css-flexbox-layout-and-keeping-aspect-ratio/>
  */
 
 /* || General */
@@ -679,10 +685,16 @@ header {
     flex-flow: row wrap;
     flex: 0 1 15em;
 
-    max-width: 20em;
-
     justify-content: flex-end;
     align-items: center;
+}
+
+#profile_picture img {
+    flex: 1 1 auto;
+    object-fit: cover;
+
+    max-width: 100%;
+    height: auto;
 }
 
 /* || Experience */
