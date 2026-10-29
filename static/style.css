@@ -749,11 +749,13 @@ header {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+}
 
+.growing_card {
     transition: all 0.2s ease-in;
 }
 
-.skill_card:hover {
+.growing_card:hover {
     transform: scale(1.1);
     box-shadow: 0 0 5px 1px var(--primary_color);
 }
