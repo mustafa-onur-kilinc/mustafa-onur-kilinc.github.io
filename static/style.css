@@ -252,6 +252,12 @@
     }
 }
 
+/* 
+@media (max-width: 650px) {
+    
+} 
+*/
+
 html, body {
     height: 100%;
 }
