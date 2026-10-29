@@ -669,7 +669,7 @@ header {
 
 #intro_page {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     flex: 1 1 auto;
     align-items: start;
     justify-content: space-between;
