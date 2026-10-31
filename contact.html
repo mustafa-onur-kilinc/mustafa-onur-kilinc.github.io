@@ -86,6 +86,9 @@ Element: classList property 2025, MDN contributors, accessed 31 October 2026,
 
 <polygon> 2025, MDN contributors, accessed 31 October 2026,
 <https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/polygon>
+
+John Kavanagh 2024, "Staying Current: Automating Copyright Year Updates", accessed 31 October 2026,
+<https://johnkavanagh.co.uk/articles/staying-current-by-automating-copyright-year-updates/>
 -->
 
 <!DOCTYPE html>
@@ -258,7 +261,7 @@ Element: classList property 2025, MDN contributors, accessed 31 October 2026,
         <a href="https://declare-ai.org/1.0.0/none.html">
           This website was created without any contribution from a generative AI.
         </a>
-        <p>© 2026 Mustafa Onur Kılınç</p>
+        <p>© <span id="copyright_year">current_year</span> Mustafa Onur Kılınç</p>
       </div>
     </footer>
   </div>
@@ -293,6 +296,15 @@ Element: classList property 2025, MDN contributors, accessed 31 October 2026,
       lowerLine.classList.toggle("rotate_up");
 
       topNav.classList.toggle("responsive")
+    });
+
+    document.addEventListener("DOMContentLoaded", event => {
+      const currentYear = new Date().getFullYear();
+      const copyrightYear = document.querySelector("#copyright_year");
+
+      if (copyrightYear) {
+        copyrightYear.textContent = `${currentYear}`;
+      }
     });
   </script>
 </body>
