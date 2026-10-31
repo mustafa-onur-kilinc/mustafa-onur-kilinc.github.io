@@ -1022,17 +1022,16 @@ header {
 #contact_cards {
     display: flex;
     flex-flow: column nowrap;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     justify-content: space-between;
     align-items: stretch;
     row-gap: 0.5em;
-    max-width: 48%;
 }
 
 .contact_card {
     display: flex;
     flex-flow: row wrap;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     align-items: center;
     justify-content: left;
     column-gap: 0.5em;
@@ -1046,7 +1045,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 48%;
     color: var(--secondary_color);
 }
 
