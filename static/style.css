@@ -515,7 +515,7 @@ header {
     justify-content: start;
 }
 
-#navigation_links {
+.navigation_links {
     justify-content: space-between;
 }
 
