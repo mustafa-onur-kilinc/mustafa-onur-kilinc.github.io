@@ -885,6 +885,7 @@ header {
     flex: 1 1 auto;
     align-items: start;
     justify-content: space-between;
+    gap: 0.5em;
 }
 
 .experience_title {
