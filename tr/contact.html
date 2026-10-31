@@ -175,32 +175,42 @@ Element: classList property 2025, MDN contributors, accessed 31 October 2026,
         <div id="contact_form" class="card padding-sm">
           <form action="https://api.web3forms.com/submit" method="POST">
             <fieldset>
-              <legend>İletişime Geçin</legend>
+              <legend>
+                <h3>İletişime Geçin</h3>
+              </legend>
               
-              <input type="hidden" name="access_key" value="8e016b74-9c6b-43fc-899a-e4b882375243">
+              <input type="hidden" name="access_key" value="18d8c6af-3e72-4d04-8175-591832c72d4e">
 
               <div>
-                <label for="name">Adınız</label><br>
-                <input type="text" name="name" id="name" placeholder="Ali VELİ" required>
+                <label for="name">Adınız</label>
+                <input type="text" id="name" name="user_name" placeholder="Ali VELİ" required>
               </div>
               
               <div>
-                <label for="email">E-posta Adresiniz</label><br>
-                <input type="text" name="email" id="email" placeholder="örnek@mail.com" required>
+                <label for="email">E-posta Adresiniz</label>
+                <input type="email" id="mail" name="user_email" placeholder="örnek@mail.com" required>
               </div>
               
               <div>
-                <label for="subject">Başlık</label><br>
-                <input type="text" name="subject" id="subject" placeholder="İyi Günler">
+                <label for="subject">Başlık</label>
+                <input type="text" id="subject" name="message_subject" placeholder="İyi Günler">
               </div>
               
               <div>
-                <label for="message">Mesaj Metni</label><br>
-                <textarea type="text" name="message" id="message" placeholder="İyi günler..." required></textarea>
+                <label for="message">Mesaj Metni</label>
+                <textarea type="text" id="msg" name="message" placeholder="İyi günler..." required></textarea>
               </div>
               
               <div>
-                <button type="submit">Gönder</button>
+                <button type="submit" class="button button_secondary button_click_effect padding-sm">
+                  Gönder
+
+                  <!-- Used a custom SVG instead of an image for better control over stroke color -->
+                  <svg class="submit_logo" width="2.5em" height="2em" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="1,9 30,3 12,25 9,18 22,8 7,15" fill="none" style="stroke:currentColor;stroke-width:1;"/>
+                    <polygon points="9,18 19,10 7,15 3,20 2.3,21" fill="currentColor" style="stroke:currentColor;stroke-width:0.5;"/>
+                  </svg>
+                </button>
               </div>
             </fieldset>
           </form>
