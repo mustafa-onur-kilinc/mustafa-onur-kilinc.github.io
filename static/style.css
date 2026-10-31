@@ -238,6 +238,8 @@
         --background_image: url("./images/endless_constellation_dark_svg_backgrounds.svg");
         --background_blend_mode: darken;
 
+        --submit_icon: url("./logos/send_icon.png");
+
         --glass_bg_color: rgba(0, 9, 37, 0.1);
 
         --glass_shine_effect: 0 0 15px 1px;  /* x y blur spread */
@@ -1065,9 +1067,67 @@ header {
 
 #contact_form {
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    color: var(--secondary_color);
+
+    color: var(--primary_color);
+
+    font-family: inherit;
+    font-size: 100%;
+}
+
+#contact_form form {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#contact_form fieldset {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+    align-items: flex-start;
+    gap: 0.4em;
+
+    border: none;
+}
+
+#contact_form legend {
+    margin-left: -0.25em;
+}
+
+#contact_form fieldset div {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+}
+
+#contact_form input, textarea, button {
+    border-radius: 0.5em;
+    border: none;
+}
+
+#contact_form input, textarea, button {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#contact_form textarea {
+    height: 7em;
+
+    overflow: auto;
+}
+
+#contact_form button {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#contact_form button .submit_logo {
+    stroke-color: var(--background_color);
+    transition: stroke-color 0.3s;
 }
 
 @media screen and (max-width: 40em) {
