@@ -1003,7 +1003,8 @@ header {
     display: flex;
     flex-flow: row nowrap;
     flex: 0 1 auto;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 0.5em;
 }
 
 #contact_cards {
@@ -1013,7 +1014,7 @@ header {
     justify-content: space-between;
     align-items: stretch;
     row-gap: 0.5em;
-    width: 48%;
+    max-width: 48%;
 }
 
 .contact_card {
@@ -1033,6 +1034,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48%;
+    max-width: 48%;
     color: var(--secondary_color);
 }
