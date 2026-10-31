@@ -1037,3 +1037,14 @@ header {
     max-width: 48%;
     color: var(--secondary_color);
 }
+
+@media screen and (max-width: 40em) {
+    .contact_card {
+        overflow: scroll;
+    }
+
+    #contact_form {
+        justify-content: flex-start;
+        overflow: scroll;
+    }
+}
