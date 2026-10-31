@@ -250,13 +250,7 @@
             --toggle-icon-switched: "🌙";
         }
     }
-}
-
-/* 
-@media (max-width: 650px) {
-    
 } 
-*/
 
 html, body {
     height: 100%;
@@ -497,6 +491,26 @@ header {
     top: 0;
 }
 
+.topnav {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+}
+
+.top_part {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.bottom_part {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
 .header_element_flexbox {
     display: flex;
     flex-flow: row nowrap;
@@ -548,6 +562,100 @@ header {
 
     margin-block-start: 1em;
     margin-block-end: 1em;
+}
+
+.bottom_part {
+    display: none;
+}
+
+.menu_line {
+    stroke-color: var(--text_color);
+    transition: color 0.3s;
+}
+
+/* transform-origin is x1 y1 values of upper_line */
+#upper_line {
+    transform-origin: 0.3em 0.5em;
+    transition: transform 0.2s;
+}
+
+#middle_line {
+    transition: opacity 0.2s;
+}
+
+/* transform-origin is x1 y1 values of lower_line */
+#lower_line {
+    transform-origin: 0.3em 1.5em;
+    transition: transform 0.2s;
+}
+
+.rotate_down {
+    transform: rotateZ(45deg);
+}
+
+.rotate_up {
+    transform: rotateZ(-45deg);
+}
+
+.get_hidden {
+    opacity: 0;
+}
+
+/* Large enough screens don't need hamburger menu */
+.hamburger_menu {
+    display: none;
+}
+
+@media screen and (max-width: 40em) {
+    .top_part {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 0 auto;
+        width: 100%;
+    }
+
+    .top_part .navigation_links {
+        display: none;
+    }
+
+    .bottom_part {
+        display: none;
+    }
+
+    .hamburger_menu {
+        display: flex;
+        align-self: flex-end;
+
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .topnav.responsive {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 1 auto;
+    }
+
+    .topnav.responsive .bottom_part {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        align-items: flex-start;
+
+        margin-block-end: 1em;
+    }
+
+    .topnav.responsive .navigation_links {
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        align-items: flex-start;
+        gap: 0.6em;
+    }
+
+    .topnav.responsive #quick_settings {
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+        align-items: center;
+    }
 }
 
 .contact_image {

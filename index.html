@@ -70,23 +70,41 @@ Document: querySelector() method 2026, MDN contributors, accessed 29 October 202
 </head>
 <body>
   <div class="wrapper">
-    <header class="glass-card">
-      <div class="header_element_flexbox" id="website_logo">
-        <a class="animated_underline" href="./index.html">Mustafa Onur KILINÇ</a>
+    <header class="glass-card topnav" id="myTopnav">
+      <div class="top_part">
+        <div class="header_element_flexbox" id="website_logo">
+          <a class="animated_underline" href="./index.html">Mustafa Onur KILINÇ</a>
+        </div>
+
+        <nav class="header_element_flexbox navigation_links">
+          <a class="animated_underline" href="./about.html">About</a>
+          <a class="animated_underline" href="./about.html#experience">Experience</a>
+          <a class="animated_underline" href="./about.html#skills">Skills</a>
+          <a class="animated_underline" href="./projects.html">Projects</a>
+          <a class="animated_underline" href="./contact.html">Contact</a>
+        </nav>
+          
+        <div class="header_element_flexbox" id="quick_settings">
+          <input type="checkbox" id="dark_mode_toggle"/>
+          <label for="dark_mode_toggle" class="toggle"></label>
+          <a href="./tr/index.html">TR</a>
+          
+          <svg class="hamburger_menu" width="2em" height="2em" xmlns="http://www.w3.org/2000/svg">
+            <line id="upper_line" x1="0.3em" y1="0.5em" x2="1.7em" y2="0.5em" style="stroke:currentColor;stroke-width:4"/>
+            <line id="middle_line" x1="0.3em" y1="1em" x2="1.7em" y2="1em" style="stroke:currentColor;stroke-width:4"/>
+            <line id="lower_line" x1="0.3em" y1="1.5em" x2="1.7em" y2="1.5em" style="stroke:currentColor;stroke-width:4"/>
+          </svg>
+        </div>
       </div>
-      
-      <nav class="header_element_flexbox" id="navigation_links">
-        <a class="animated_underline" href="./about.html">About</a>
-        <a class="animated_underline" href="./about.html#experience">Experience</a>
-        <a class="animated_underline" href="./about.html#skills">Skills</a>
-        <a class="animated_underline" href="./projects.html">Projects</a>
-        <a class="animated_underline" href="./contact.html">Contact</a>
-      </nav>
-      
-      <div class="header_element_flexbox" id="quick_settings">
-        <input type="checkbox" id="dark_mode_toggle"/>
-        <label for="dark_mode_toggle" class="toggle"></label>
-        <a href="./tr/index.html">TR</a>
+        
+      <div class="bottom_part">
+        <nav class="header_element_flexbox navigation_links">
+          <a class="animated_underline" href="./about.html">About</a>
+          <a class="animated_underline" href="./about.html#experience">Experience</a>
+          <a class="animated_underline" href="./about.html#skills">Skills</a>
+          <a class="animated_underline" href="./projects.html">Projects</a>
+          <a class="animated_underline" href="./contact.html">Contact</a>
+        </nav>
       </div>
     </header>
     
@@ -191,6 +209,21 @@ Document: querySelector() method 2026, MDN contributors, accessed 29 October 202
       else {
         localStorage.removeItem("isThemeSwitched");
       }
+    });
+
+    const upperLine = document.querySelector("#upper_line");
+    const middleLine = document.querySelector("#middle_line");
+    const lowerLine = document.querySelector("#lower_line");
+    const hamburgerMenu = document.querySelector(".hamburger_menu");
+
+    const topNav = document.querySelector("#myTopnav");
+
+    hamburgerMenu.addEventListener("click", function() {
+      upperLine.classList.toggle("rotate_down");
+      middleLine.classList.toggle("get_hidden");
+      lowerLine.classList.toggle("rotate_up");
+
+      topNav.classList.toggle("responsive")
     });
   </script>
 </body>
