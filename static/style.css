@@ -404,6 +404,11 @@ footer {
     align-items: flex-start;
 }
 
+.navigation_links_footer h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
 .navigation_links_footer > a {
     text-decoration: none;
 
@@ -420,6 +425,11 @@ footer {
 
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.image_sources h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .image_sources > a {
