@@ -966,19 +966,25 @@ header {
 
 #all_projects {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     flex: 0 1 auto;
 
     justify-content: space-between;
-    column-gap: 1em;
+    gap: 1em;
+}
+
+@media screen and (max-width: 40em) {
+    #all_projects {
+        flex-flow: row wrap;
+    }
 }
 
 .project_card {
     display: flex;
     flex-flow: column wrap;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
 
-    width: 25%;
+    max-width: 20em;
 }
 
 .project_image {
@@ -990,7 +996,9 @@ header {
 
     border-radius: 0.4em;
 
-    width: stretch;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
 .project_source_button {
