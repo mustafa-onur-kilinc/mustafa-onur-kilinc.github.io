@@ -976,6 +976,7 @@ header {
 @media screen and (max-width: 40em) {
     #all_projects {
         flex-flow: row wrap;
+        justify-content: space-evenly;
     }
 }
 
