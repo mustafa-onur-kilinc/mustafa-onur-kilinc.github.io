@@ -787,6 +787,7 @@ header {
     flex: 1 1 auto;
     align-items: start;
     justify-content: space-between;
+    gap: 5%;
 }
 
 #who_am_i {
@@ -820,10 +821,12 @@ header {
 #profile_picture {
     display: flex;
     flex-flow: row wrap;
-    flex: 0 1 15em;
+    flex: 1 1 auto;
 
     justify-content: flex-end;
     align-items: center;
+
+    max-width: 15em;
 }
 
 #profile_picture img {
