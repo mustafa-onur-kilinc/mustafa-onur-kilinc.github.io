@@ -404,6 +404,12 @@ footer {
     transition: 0.3s;
 }
 
+@media screen and (max-width: 40em) {
+    .image_sources {
+        overflow: scroll;
+    }
+}
+
 .footer_separator {
     height: 1px;
     width: stretch;
