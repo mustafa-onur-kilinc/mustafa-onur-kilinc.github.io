@@ -1,0 +1,193 @@
+<!-- 
+Resources used to write this background:
+SVG background by SVGBackgrounds.com,
+<"https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">
+
+Juan Calou 2022, "A how-to guide to SVG animation", Tiny Technologies Inc., accessed 2 November 2026, 
+<https://www.tiny.cloud/blog/guide-svg-animation/>
+
+stroke-dasharray CSS property 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/stroke-dasharray>
+
+stroke-dashoffset CSS property 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/stroke-dashoffset>
+
+<g> 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/g>
+
+<path> 2025, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/path>
+
+viewBox 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/viewBox>
+
+preserveAspectRatio 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/preserveAspectRatio>
+
+d 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/d>
+
+animation CSS property 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation>
+
+animation-name CSS property 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-name>
+
+animation-iteration-count CSS property 2026, MDN contributors, accessed 2 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-iteration-count>
+
+Biby Cheriyan 2017, "Fill responsive svg with background image with preserving ratio", Stack Exchange, Inc., 
+accessed 2 November 2026, <https://stackoverflow.com/a/47089155>
+
+Sara Soueidan 2014, "Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio",
+accessed 2 November 2026, <https://www.sarasoueidan.com/blog/svg-coordinate-systems/>
+
+Chapter 6. Sizing and Scaling SVG n.d., Chris Coyier, accessed 2 November 2026,
+<https://practical-svg.chriscoyier.net/chapter/practical-svg-ebook-10/>
+
+Robin Monteiro 2026, "Responsive SVG Design: Scaling Graphics Across All Devices", VectoSolve, accessed 2 November 2026,
+<https://vectosolve.com/blog/responsive-svg-design-guide>
+
+Applying CSS Rules for Scalable SVG Sizing 2026, Cloudinary, accessed 2 November 2026,
+<https://cloudinary.com/guides/image-effects/resize-svg>
+
+Mariana Beldi 2023, "6 Common SVG Fails (and How to Fix Them)", accessed 2 November 2026,
+<https://css-tricks.com/6-common-svg-fails-and-how-to-fix-them/>
+
+SVG and CSS 2026, MDN contributors, accessed 3 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/SVG_and_CSS>
+
+raddrick 2021, "How to style SVG with external CSS?", Stack Exchange, Inc., 
+accessed 3 November 2026, <https://stackoverflow.com/a/20720935>
+
+ameliaBR 2014, "Styling repeating svg background with css", Stack Exchange, Inc.,
+accessed 3 November 2026, <https://stackoverflow.com/a/26086072>
+
+A Haworth 2021, "how can I Repeat SVG's without using pattern?", Stack Exchange, Inc.,
+accessed 3 November 2026, <https://stackoverflow.com/a/68450325>
+-->
+
+<svg class="background_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" preserveAspectRatio="xMinYMin slice">
+    <defs>
+        <style>
+            .background_svg {
+                background-color: rgba(0, 9, 37, 1);
+            }
+            
+            .background_lines {
+                fill: none;
+                stroke: rgba(0, 28, 65, 0.6);
+                stroke-width: 2; 
+            }
+
+            .background_circles {
+                fill: rgba(118, 164, 223, 1.0);
+            }
+
+            .glowing_line {
+                fill: transparent;
+                stroke: rgba(118, 164, 223, 1.0);
+                stroke-width: 3;
+
+                stroke-dashoffset: 0;
+
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-direction: normal;
+                animation-iteration-count: infinite;
+            }
+
+            /* stroke-dasharray: (glow_len) (total_len - glow_len) */
+            #line_one {
+                stroke-dasharray: 70 1137;
+
+                animation-name: line_glow_one;
+            }
+
+            /* stroke-dasharray: (glow_len) (total_len - glow_len) */
+            #line_two {
+                stroke-dasharray: 70 1052;
+
+                animation-name: line_glow_two;
+            }
+
+            /* stroke-dasharray: (glow_len) (total_len - glow_len) */
+            #line_three {
+                stroke-dasharray: 70 764;
+
+                animation-name: line_glow_three;
+            }
+
+            @keyframes line_glow_one {
+                /* stroke-dashoffset: total_len */
+                from {
+                    stroke-dashoffset: 1207;
+                }
+
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            @keyframes line_glow_two {
+                /* stroke-dashoffset: total_len */
+                from {
+                    stroke-dashoffset: 1121;
+                }
+
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            @keyframes line_glow_three {
+                /* stroke-dashoffset: total_len */
+                from {
+                    stroke-dashoffset: 834;
+                }
+
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+        </style>
+    </defs>
+    
+    <!-- Lines -->
+    <g class="background_lines">
+        <path d="M 769 229, L 1037 260.9, M 927 880, L 731 737, 520 660, 309 538, 40 599, 295 764, 126.5 879.5, 40 599, -197 493, 102 382, -31 229, 126.5 79.5, -69 -63"/>
+        <path d="M -31 229, L 237 261, 390 382, 603 493, 308.5 537.5, 101.5 381.5, M 370 905, L 295 764,"/>
+        <path d="M 520 660, L 578 842, 731 737, 840 599, 603 493, 520 660, 295 764, 309 538, 390 382, 539 269, 769 229, 577.5 41.5, 370 105, 295 -36, 126.5 79.5, 237 261, 102 382, 40 599, -69 737, 127 880"/>
+        <path d="M 520 -140, L 578.5 42.5, 731 -63, M 603 493, L 539 269, 237 261, 370 105, M 902 382, L 539 269, M 390 382, L 102 382"/>
+        <path d="M -222 42, L 126.5 79.5, 370 105, 539 269, 577.5 41.5, 927 80, 769 229, 902 382, 603 493, 731 737, M 295 -36, L 577.5 41.5, M 578 842, L 295 764, M 40 -201, L 127 80, M 102 382, L -261 269"/>
+    </g>
+    
+    <g fill="none">
+        <!-- Total length: 1206.53 -->
+        <path class="glowing_line" id="line_one" d="M 40 -201, L 126.5 79.5, 237 261, 102 382, 40 599, 126.5 879.5"/>
+    
+        <!-- Total length: 1121.68 -->
+        <path class="glowing_line" id="line_two" d="M 295 -36, L 370 105, 237 261, 390 382, 309 538, 295 764, 370 905"/>
+    
+        <!-- Total length: 833.88 -->
+        <path class="glowing_line" id="line_three" d="M 731 -63, L 578.5 42.5, 539 269, 603 493, 731 737, 578 842"/>
+    </g>
+    
+    <!-- Circles -->
+    <g class="background_circles">
+        <circle  cx="769" cy="229" r="6"/>
+        <circle  cx="539" cy="269" r="6"/>
+        <circle  cx="603" cy="493" r="6"/>
+        <circle  cx="731" cy="737" r="6"/>
+        <circle  cx="520" cy="660" r="6"/>
+        <circle  cx="309" cy="538" r="6"/>
+        <circle  cx="295" cy="764" r="6"/>
+        <circle  cx="40" cy="599" r="6"/>
+        <circle  cx="102" cy="382" r="6"/>
+        <circle  cx="127" cy="80" r="6"/>
+        <circle  cx="370" cy="105" r="6"/>
+        <circle  cx="578" cy="42" r="6"/>
+        <circle  cx="237" cy="261" r="6"/>
+        <circle  cx="390" cy="382" r="6"/>
+    </g>
+</svg>
