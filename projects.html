@@ -84,27 +84,27 @@ John Kavanagh 2024, "Staying Current: Automating Copyright Year Updates", access
   <link rel="stylesheet" href="./static/style.css"/>
 </head>
 <body>
-  <div class="wrapper">
-    <header class="glass-card topnav" id="myTopnav">
-      <div class="top_part">
-        <div class="header_element_flexbox" id="website_logo">
-          <a class="animated_underline" href="./index.html">Mustafa Onur KILINÇ</a>
+  <div class="wrapper flex flex_column flex_nowrap flex_grow_0 flex_shrink_1 flex_basis_auto gap-xl">
+    <header class="glass-card align_center flex flex_row flex_wrap flex_grow_0 flex_shrink_1 flex_basis_auto justify_between padding_left-lg padding_right-lg" id="myTopnav">
+      <div class="align_center flex flex_row flex_nowrap flex_grow_1 flex_shrink_1 flex_basis_auto max_width-sm:flex_shrink_0 max_width-sm:width_100">
+        <div class="align_center flex flex_row flex_nowrap flex_grow_1 flex_shrink_1 flex_basis_auto justify_start">
+          <a class="color_text animated_underline text_decor_none" href="./index.html">Mustafa Onur KILINÇ</a>
         </div>
 
-        <nav class="header_element_flexbox navigation_links">
-          <a class="animated_underline" href="./about.html">About</a>
-          <a class="animated_underline" href="./about.html#experience">Experience</a>
-          <a class="animated_underline" href="./about.html#skills">Skills</a>
-          <a class="animated_underline" href="./projects.html">Projects</a>
-          <a class="animated_underline" href="./contact.html">Contact</a>
+        <nav class="align_center flex flex_row flex_nowrap flex_grow_1 flex_shrink_1 flex_basis_auto justify_between max_width-sm:display_none">
+          <a class="animated_underline color_text text_decor_none" href="./about.html">About</a>
+          <a class="animated_underline color_text text_decor_none" href="./about.html#experience">Experience</a>
+          <a class="animated_underline color_text text_decor_none" href="./about.html#skills">Skills</a>
+          <a class="animated_underline color_text text_decor_none" href="./projects.html">Projects</a>
+          <a class="animated_underline color_text text_decor_none" href="./contact.html">Contact</a>
         </nav>
           
-        <div class="header_element_flexbox" id="quick_settings">
+        <div class="align_center flex flex_row flex_nowrap flex_grow_1 flex_shrink_1 flex_basis_auto column_gap-xs justify_end margin_block-md">
           <input type="checkbox" id="dark_mode_toggle"/>
-          <label for="dark_mode_toggle" class="toggle"></label>
-          <a href="./tr/projects.html">TR</a>
+          <label for="dark_mode_toggle" class="toggle flex"></label>
+          <a class="animated_underline color_text text_decor_none" href="./tr/projects.html">TR</a>
           
-          <svg class="hamburger_menu" width="2em" height="2em" xmlns="http://www.w3.org/2000/svg">
+          <svg class="hamburger_menu bg_color_transparent max_width-sm:align_self_flex_end max_width-sm:display_flex" width="2em" height="2em" xmlns="http://www.w3.org/2000/svg">
             <line id="upper_line" x1="0.3em" y1="0.5em" x2="1.7em" y2="0.5em" style="stroke:currentColor;stroke-width:4"/>
             <line id="middle_line" x1="0.3em" y1="1em" x2="1.7em" y2="1em" style="stroke:currentColor;stroke-width:4"/>
             <line id="lower_line" x1="0.3em" y1="1.5em" x2="1.7em" y2="1.5em" style="stroke:currentColor;stroke-width:4"/>
@@ -112,13 +112,13 @@ John Kavanagh 2024, "Staying Current: Automating Copyright Year Updates", access
         </div>
       </div>
         
-      <div class="bottom_part">
-        <nav class="header_element_flexbox navigation_links">
-          <a class="animated_underline" href="./about.html">About</a>
-          <a class="animated_underline" href="./about.html#experience">Experience</a>
-          <a class="animated_underline" href="./about.html#skills">Skills</a>
-          <a class="animated_underline" href="./projects.html">Projects</a>
-          <a class="animated_underline" href="./contact.html">Contact</a>
+      <div class="bottom_part align_flex_start flex_column flex_nowrap flex_grow_1 flex_shrink_1 flex_basis_auto margin_block_end-md">
+        <nav class="align_flex_start flex flex_column flex_nowrap flex_grow_1 flex_shrink_1 flex_basis_auto gap-sm">
+          <a class="animated_underline color_text text_decor_none" href="./about.html">About</a>
+          <a class="animated_underline color_text text_decor_none" href="./about.html#experience">Experience</a>
+          <a class="animated_underline color_text text_decor_none" href="./about.html#skills">Skills</a>
+          <a class="animated_underline color_text text_decor_none" href="./projects.html">Projects</a>
+          <a class="animated_underline color_text text_decor_none" href="./contact.html">Contact</a>
         </nav>
       </div>
     </header>
@@ -127,70 +127,70 @@ John Kavanagh 2024, "Staying Current: Automating Copyright Year Updates", access
       <h3 class="color_secondary">Chapter 2</h3>
       <h1 class="color_primary">Projects</h1>
       
-      <div id="all_projects">
-        <div class="card project_card padding-sm">
+      <div class="flex flex_row flex_nowrap flex_grow_0 flex_shrink_1 flex_basis_auto justify_between gap-md max_width-sm:flex_wrap max_width-sm:justify_evenly">
+        <div class="project_card align_baseline bg_color_surface border_radius-md flex flex_column flex_wrap flex_grow_1 flex_shrink_1 flex_basis_auto padding-sm">
           <img src=".\static\images\endless_constellation_white_svg_backgrounds.png" 
-          alt="Image of Project" class="project_image">
+          alt="Image of Project" class="project_image align_center border_radius-xs flex flex_row flex_wrap flex_grow_0 flex_shrink_0 flex_basis_auto justify_center">
           
           <h2 class="color_surface_text">Project 1</h2>
           <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
           
-          <ul class="list">
-            <li class="list__element list__element--border">Lorem</li>
-            <li class="list__element list__element--border">Ipsum</li>
-            <li class="list__element list__element--border">Dolor</li>
-            <li class="list__element list__element--border">Amet</li>
+          <ul class="list flex flex_row flex_wrap column_gap-sm">
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Lorem</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Ipsum</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Dolor</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Amet</li>
           </ul>
           
           <div class="project_source_button">
             <a href="./projects.html">
-              <button class="button button_medium button_secondary button_click_effect padding-xs" type="button">
+              <button class="button button_secondary button_click_effect border_radius-md padding-xs text-md" type="button">
                 Source
               </button>
             </a>
           </div>
         </div>
         
-        <div class="card project_card padding-sm">
+        <div class="project_card align_baseline bg_color_surface border_radius-md flex flex_column flex_wrap flex_grow_1 flex_shrink_1 flex_basis_auto padding-sm">
           <img src=".\static\images\endless_constellation_white_svg_backgrounds.png" 
-          alt="Image of Project" class="project_image">
+          alt="Image of Project" class="project_image align_center border_radius-xs flex flex_row flex_wrap flex_grow_0 flex_shrink_0 flex_basis_auto justify_center">
           
           <h2 class="color_surface_text">Project 2</h2>
           <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
           
-          <ul class="list">
-            <li class="list__element list__element--border">Lorem</li>
-            <li class="list__element list__element--border">Ipsum</li>
-            <li class="list__element list__element--border">Dolor</li>
-            <li class="list__element list__element--border">Amet</li>
+          <ul class="list flex flex_row flex_wrap column_gap-sm">
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Lorem</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Ipsum</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Dolor</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Amet</li>
           </ul>
           
           <div class="project_source_button">
             <a href="./projects.html">
-              <button class="button button_medium button_secondary button_click_effect padding-xs" type="button">
+              <button class="button button_secondary button_click_effect border_radius-md padding-xs text-md" type="button">
                 Source
               </button>
             </a>
           </div>
         </div>
         
-        <div class="card project_card padding-sm">
+        <div class="project_card align_baseline bg_color_surface border_radius-md flex flex_column flex_wrap flex_grow_1 flex_shrink_1 flex_basis_auto padding-sm">
           <img src=".\static\images\endless_constellation_white_svg_backgrounds.png" 
-          alt="Image of Project" class="project_image">
+          alt="Image of Project" class="project_image align_center border_radius-xs flex flex_row flex_wrap flex_grow_0 flex_shrink_0 flex_basis_auto justify_center">
           
           <h2 class="color_surface_text">Project 3</h2>
           <p class="color_surface_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est sapien, semper rutrum massa.</p>
           
-          <ul class="list">
-            <li class="list__element list__element--border">Lorem</li>
-            <li class="list__element list__element--border">Ipsum</li>
-            <li class="list__element list__element--border">Dolor</li>
-            <li class="list__element list__element--border">Amet</li>
+          <ul class="list flex flex_row flex_wrap column_gap-sm">
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Lorem</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Ipsum</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Dolor</li>
+            <li class="list__element--border bg_color_background color_surface_text border_radius-md padding-xs transition_all-normal">Amet</li>
           </ul>
           
           <div class="project_source_button">
             <a href="./projects.html">
-              <button class="button button_medium button_secondary button_click_effect padding-xs" type="button">
+              <button class="button button_secondary button_click_effect border_radius-md padding-xs text-md" type="button">
                 Source
               </button>
             </a>
@@ -199,35 +199,35 @@ John Kavanagh 2024, "Staying Current: Automating Copyright Year Updates", access
       </div>
     </section>
     
-    <footer class="padding-sm">
-      <div class="footer_top_part">
-        <div class="name_and_slogan">
-          <h3>Mustafa Onur KILINÇ</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna est, rhoncus nec nisl at, lobortis tincidunt libero.</p>
+    <footer class="bg_color_background flex flex_column flex_wrap flex_grow_0 flex_shrink_0 flex_basis_auto padding-sm">
+      <div class="flex flex_row flex_wrap flex_grow_0 flex_shrink_1 flex_basis_auto justify_between">
+        <div class="name_and_slogan align_flex_start flex flex_column flex_wrap flex_grow_0 flex_shrink_1 flex_basis_auto justify_start">
+          <h3 class="margin_top_0 margin_bottom-md">Mustafa Onur KILINÇ</h3>
+          <p class="margin_top_0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna est, rhoncus nec nisl at, lobortis tincidunt libero.</p>
         </div>
 
-        <nav class="navigation_links_footer">
-          <h3>Quick Links</h3>
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./about.html#experience">Experience</a>
-          <a href="./about.html#skills">Skills</a>
-          <a href="./projects.html">Projects</a>
-          <a href="./contact.html">Contact</a>
+        <nav class="navigation_links_footer align_flex_start flex flex_column flex_wrap flex_grow_0 flex_shrink_1 flex_basis_auto justify_start">
+          <h3 class="margin_top_0 margin_bottom-md">Quick Links</h3>
+          <a class="color_text text_decor_none" href="./index.html">Home</a>
+          <a class="color_text text_decor_none" href="./about.html">About</a>
+          <a class="color_text text_decor_none" href="./about.html#experience">Experience</a>
+          <a class="color_text text_decor_none" href="./about.html#skills">Skills</a>
+          <a class="color_text text_decor_none" href="./projects.html">Projects</a>
+          <a class="color_text text_decor_none" href="./contact.html">Contact</a>
         </nav>
-  
-        <div class="image_sources">
-          <h3>Image Sources</h3>
-          <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">
+        
+        <div class="image_sources align_flex_start flex flex_column flex_wrap flex_grow_0 flex_shrink_1 flex_basis_auto justify_flex_start max_width-sm:overflow_scroll">
+          <h3 class="margin_top_0 margin_bottom-md">Image Sources</h3>
+          <a class="color_text" href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">
             Free SVG Backgrounds and Patterns by SVGBackgrounds.com
           </a>
         </div>
       </div>
 
-      <div class="footer_separator"></div>
+      <div class="footer_separator bg_color_text margin_block-md"></div>
         
-      <div class="footer_bottom_part">
-        <a href="https://declare-ai.org/1.0.0/none.html">
+      <div class="footer_bottom_part align_center flex flex_column flex_wrap flex_grow_0 flex_shrink_1 flex_basis_auto justify_center">
+        <a class="color_text" href="https://declare-ai.org/1.0.0/none.html">
           This website was created without any contribution from a generative AI.
         </a>
         <p>© <span id="copyright_year">current_year</span> Mustafa Onur Kılınç</p>
@@ -258,13 +258,15 @@ John Kavanagh 2024, "Staying Current: Automating Copyright Year Updates", access
     const hamburgerMenu = document.querySelector(".hamburger_menu");
 
     const topNav = document.querySelector("#myTopnav");
+    const bottomPart = document.querySelector(".bottom_part");
 
     hamburgerMenu.addEventListener("click", function() {
       upperLine.classList.toggle("rotate_down");
       middleLine.classList.toggle("get_hidden");
       lowerLine.classList.toggle("rotate_up");
 
-      topNav.classList.toggle("responsive")
+      topNav.classList.toggle("max_width-sm:flex_grow_1");
+      bottomPart.classList.toggle("max_width-sm:display_flex");
     });
 
     document.addEventListener("DOMContentLoaded", event => {
