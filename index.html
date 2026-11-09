@@ -104,11 +104,18 @@ Adding custom icons to your site 2026, MDN contributors, accessed 9 November 202
   <meta itemprop="ai-content-declaration:version" content="1.0.0">
   <meta itemprop="ai-content-declaration:level" content="none">
   <meta name="viewport" content="width=device-width"/>
+
   <title>Mustafa Onur KILINÇ - Computer Engineer</title>
+
   <link rel="apple-touch-icon" sizes="180x180" href="./static/logos/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./static/logos/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./static/logos/favicon-16x16.png">
   <link rel="manifest" href="./static/logos/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./static/style.css"/>
 </head>
 <body>
@@ -209,15 +216,17 @@ Adding custom icons to your site 2026, MDN contributors, accessed 9 November 202
           <p class="margin_top_0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna est, rhoncus nec nisl at, lobortis tincidunt libero.</p>
         </div>
 
-        <nav class="align_start flex flex_col_wrap flex_initial gap-xs justify_start max_width_1/3">
+        <div class="align_start flex flex_col_wrap flex_initial justify_start max_width_1/3">
           <h3 class="margin_top_0 margin_bottom-md">Quick Links</h3>
-          <a class="color_text text_decor_none transition_colors" href="./index.html">Home</a>
-          <a class="color_text text_decor_none transition_colors" href="./about.html">About</a>
-          <a class="color_text text_decor_none transition_colors" href="./about.html#experience">Experience</a>
-          <a class="color_text text_decor_none transition_colors" href="./about.html#skills">Skills</a>
-          <a class="color_text text_decor_none transition_colors" href="./projects.html">Projects</a>
-          <a class="color_text text_decor_none transition_colors" href="./contact.html">Contact</a>
-        </nav>
+          <nav class="flex flex_col_wrap flex_initial justify_start gap-xs">
+            <a class="color_text text_decor_none transition_colors" href="./index.html">Home</a>
+            <a class="color_text text_decor_none transition_colors" href="./about.html">About</a>
+            <a class="color_text text_decor_none transition_colors" href="./about.html#experience">Experience</a>
+            <a class="color_text text_decor_none transition_colors" href="./about.html#skills">Skills</a>
+            <a class="color_text text_decor_none transition_colors" href="./projects.html">Projects</a>
+            <a class="color_text text_decor_none transition_colors" href="./contact.html">Contact</a>
+          </nav>
+        </div>
         
         <div class="align_start flex flex_col_wrap flex_initial justify_start max_width_1/3 max_width-sm:overflow_scroll">
           <h3 class="margin_top_0 margin_bottom-md">Image Sources</h3>

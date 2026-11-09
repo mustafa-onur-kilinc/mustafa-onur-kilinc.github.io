@@ -291,6 +291,9 @@
  *
  * align-self CSS property 2026, MDN contributors, accessed 8 November 2026,
  * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-self>
+ *
+ * CSS API update 2024, Google, Inc., accessed 9 November 2026,
+ * <https://developers.google.com/fonts/docs/css2>
  */
 
 /* || General */
@@ -413,6 +416,9 @@ body {
     background-blend-mode: var(--background_blend_mode);
     color: var(--text_color);
     transition: all var(--time_normal);
+
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 16px;
 }
 
 /* || Header */
