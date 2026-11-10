@@ -562,6 +562,10 @@ body {
     align-items: center;
 }
 
+.align_self_center {
+    align-self: center;
+}
+
 .align_self_end {
     align-self: flex-end;
 }
