@@ -318,7 +318,7 @@
 
     --background_color_with_alpha: rgba(242, 245, 250, 0.9);
     --background_image: url("./images/endless_constellation_light_animated.svg");
-    --background_blend_mode: lighten;
+    --background_blend_mode: overlay;
 
     /* Alpha of this color defines glass refraction, refraction increases with alpha */
     --glass_bg_color: rgba(242, 245, 250, 0.25);
@@ -390,7 +390,7 @@
 
             --background_color_with_alpha: rgba(242, 245, 250, 0.9);
             --background_image: url("./images/endless_constellation_light_animated.svg");
-            --background_blend_mode: lighten;
+            --background_blend_mode: overlay;
 
             /* Alpha of this color defines glass refraction, refraction increases with alpha */
             --glass_bg_color: rgba(242, 245, 250, 0.25);
