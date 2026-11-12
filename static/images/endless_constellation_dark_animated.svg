@@ -65,6 +65,9 @@ accessed 3 November 2026, <https://stackoverflow.com/a/26086072>
 
 A Haworth 2021, "how can I Repeat SVG's without using pattern?", Stack Exchange, Inc.,
 accessed 3 November 2026, <https://stackoverflow.com/a/68450325>
+
+Leon Atherton 2024, "SVG shapes not working in Firefox but fine in Chrome, Safari, IE & Opera?", IDRsolutions Ltd 2026,
+accessed 12 November 2026, <https://blog.idrsolutions.com/svg-shapes-not-working-in-firefox-but-fine-in-chrome-safari-ie-opera/>
 -->
 
 <svg class="background_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" preserveAspectRatio="xMinYMin slice">
@@ -155,22 +158,22 @@ accessed 3 November 2026, <https://stackoverflow.com/a/68450325>
     
     <!-- Lines -->
     <g class="background_lines">
-        <path d="M 769 229, L 1037 260.9, M 927 880, L 731 737, 520 660, 309 538, 40 599, 295 764, 126.5 879.5, 40 599, -197 493, 102 382, -31 229, 126.5 79.5, -69 -63"/>
-        <path d="M -31 229, L 237 261, 390 382, 603 493, 308.5 537.5, 101.5 381.5, M 370 905, L 295 764,"/>
-        <path d="M 520 660, L 578 842, 731 737, 840 599, 603 493, 520 660, 295 764, 309 538, 390 382, 539 269, 769 229, 577.5 41.5, 370 105, 295 -36, 126.5 79.5, 237 261, 102 382, 40 599, -69 737, 127 880"/>
-        <path d="M 520 -140, L 578.5 42.5, 731 -63, M 603 493, L 539 269, 237 261, 370 105, M 902 382, L 539 269, M 390 382, L 102 382"/>
-        <path d="M -222 42, L 126.5 79.5, 370 105, 539 269, 577.5 41.5, 927 80, 769 229, 902 382, 603 493, 731 737, M 295 -36, L 577.5 41.5, M 578 842, L 295 764, M 40 -201, L 127 80, M 102 382, L -261 269"/>
+        <path d="M 769,229 L 1037,260.9 M 927,880 L 731,737 520,660 309,538 40,599 295,764 126.5,879.5 40,599 -197,493 102,382 -31,229 126.5,79.5 -69,-63"/>
+        <path d="M -31,229 L 237,261 390,382 603,493 308.5,537.5 101.5,381.5 M 370,905 L 295,764"/>
+        <path d="M 520,660 L 578,842 731,737 840,599 603,493 520,660 295,764 309,538 390,382 539,269 769,229 577.5,41.5 370,105 295,-36 126.5,79.5 237,261 102,382 40,599 -69,737 127,880"/>
+        <path d="M 520,-140 L 578.5,42.5 731,-63 M 603,493 L 539,269 237,261 370,105 M 902,382 L 539,269 M 390,382 L 102,382"/>
+        <path d="M -222,42 L 126.5,79.5 370,105 539,269 577.5,41.5 927,80 769,229 902,382 603,493 731,737 M 295,-36 L 577.5,41.5 M 578,842 L 295,764 M 40,-201 L 127,80 M 102,382 L -261,269"/>
     </g>
     
     <g fill="none">
         <!-- Total length: 1206.53 -->
-        <path class="glowing_line" id="line_one" d="M 40 -201, L 126.5 79.5, 237 261, 102 382, 40 599, 126.5 879.5"/>
+        <path class="glowing_line" id="line_one" d="M 40,-201 L 126.5,79.5 237,261 102,382 40,599 126.5,879.5"/>
     
         <!-- Total length: 1121.68 -->
-        <path class="glowing_line" id="line_two" d="M 295 -36, L 370 105, 237 261, 390 382, 309 538, 295 764, 370 905"/>
+        <path class="glowing_line" id="line_two" d="M 295,-36 L 370,105 237,261 390,382 309,538 295,764 370,905"/>
     
         <!-- Total length: 833.88 -->
-        <path class="glowing_line" id="line_three" d="M 731 -63, L 578.5 42.5, 539 269, 603 493, 731 737, 578 842"/>
+        <path class="glowing_line" id="line_three" d="M 731,-63 L 578.5,42.5 539,269 603,493 731,737 578,842"/>
     </g>
     
     <!-- Circles -->
