@@ -1004,6 +1004,14 @@ body {
     margin-left: -0.25em;
 }
 
+.-margin_left-xs {
+    margin-left: calc(-1 * var(--size_xs));
+}
+
+.-margin_right-xs {
+    margin-right: calc(-1 * var(--size_xs));
+}
+
 .max_width_full {
     max-width: 100%;
 }
