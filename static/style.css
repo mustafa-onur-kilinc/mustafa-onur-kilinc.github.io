@@ -107,7 +107,7 @@
  * DEV Community, accessed 25 October 2026,
  * <https://dev.to/web_dev-usman/building-a-smooth-darklight-mode-switch-with-modern-css-features-3jlc>
  * 
- * Alexander Sandberg 2022, "Creating a website theme switcher with CSS only", accessed 25 October 2026,
+ * Alexander Sandberg 2022, "Creating a website theme switcher with CSS only", accessed 12 November 2026,
  * <https://alexandersandberg.com/articles/creating-a-website-theme-switcher-with-css-only/>
  * 
  * Mohamed Adhuham 2020, "Dark Mode in CSS Guide", accessed 25 October 2026,
@@ -294,6 +294,9 @@
  *
  * CSS API update 2024, Google, Inc., accessed 9 November 2026,
  * <https://developers.google.com/fonts/docs/css2>
+ *
+ * clip-path CSS property 2026, MDN contributors, accessed 12 November 2026,
+ * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clip-path>
  */
 
 /* || General */
@@ -798,7 +801,7 @@ body {
 }
 
 .clip_path_px {
-    clip-path: rect(1px, 1px, 1px, 1px);
+    clip-path: rect(1px 1px 1px 1px);
 }
 
 .color_primary {
