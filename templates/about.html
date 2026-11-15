@@ -1,0 +1,143 @@
+<!-- 
+Resources used to write this file:
+Creating links 2025, MDN contributors, accessed 17 October 2026,
+<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links>
+
+Jonas Hietala 2024, "A simple timeline using CSS flexbox", accessed 18 October 2026,
+<https://www.jonashietala.se/blog/2024/08/25/a_simple_timeline_using_css_flexbox/>
+
+How TO - Timeline n.d., Refsnes Data, accessed 18 October 2026,
+<https://www.w3schools.com/howto/howto_css_timeline.asp>
+
+Animated Buttons - "Pressed Effect" n.d., Refsnes Data, accessed 29 October 2026,
+<https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3>
+
+Document should have one main landmark n.d., Deque Systems,
+accessed 8 November 2026, <https://dequeuniversity.com/rules/axe/4.13/landmark-one-main>
+
+For n.d., Pallets, accessed 15 November 2026,
+<https://jinja.palletsprojects.com/en/stable/templates/#for> 
+-->
+
+{% extends "base.html" %}
+
+{% block change_lang %}
+href="{{ url_for('about_tr') }}"
+{% endblock change_lang %}
+
+{% block content %}
+<section>
+  <h3 class="color_secondary margin_block_0 transition_colors">Chapter 1</h3>
+  <h1 class="color_primary margin_block_0 text-2xl transition_colors">About Me</h1>
+  
+  <!-- Who am I? -->
+  <p>
+    I am a conscientious person who is open to learn new things, determined to do his best,
+    and prone to stressing about tasks. I want to do and make things that will benefit others
+    in real life and make me proud.
+  </p>
+  
+  <!-- What Do I Do? -->
+  <p>
+    I decided pursuing a career in ADAS and autonomous vehicles was the best way to do so.
+    So, I have attended a student club at my university which enters competitions with 
+    self made electric and autonomous cars to gain knowledge and experience in autonomous vehicles.
+  </p>
+    
+  <p>
+    Throughout my university years, I have worked on training AI models for computer vision,
+    and developing Android applications with Java and Android Studio.
+  </p>
+  
+  <!-- What Do I Want? -->
+  <p>
+    I want to pursuit a career where I can work on technologies that will benefit people, 
+    even in small ways. I am willing to learn new skills and hone existing ones to get there.
+  </p>
+</section>
+
+<section id="experience">
+  <h3 class="color_secondary margin_block_0 transition_colors">Chapter 1.1</h3>
+  <h2 class="color_primary margin_block_0 text-xl transition_colors">Education</h2>
+  
+  <div class="before:bg_color_secondary before:content_none before:height_full before:-margin_left-sm before:pos_absolute before:top_0 before:width-xs before:transition_colors flex flex_col_wrap flex_initial pos_relative row_gap-xl">
+    <div class="align_baseline bg_color_surface border_radius-md before:bg_color_background before:border_color_secondary before:border_radius_circle before:border_solid before:border_width_4px before:content_none before:height-xs before:-left-md before:pos_absolute before:top-md before:transition_colors before:width-xs before:z_index_1 pad-sm pos_relative transition_colors">
+      <div class="flex flex_row_nowrap flex_1 align_start justify_between gap-xs">
+        <div class="flex flex_col_wrap flex_1">
+          <p class="margin_block_0 text-lg">{{ education_info["title"] }}</p>
+          <p class="color_secondary margin_block_0 text-md transition_colors">{{ education_info["university"] }}</p>
+        </div>
+        
+        <span class="text_align_right flex">{{ education_info["start_date"] }}<br>{{ education_info["end_date"] }}</span>
+      </div>
+
+      <ul>
+        {% for element in education_info["info"] %}
+        <li>{{ element }}</li>
+        {% endfor %}
+      </ul>
+
+      <ul class="column_gap-sm flex flex_row_wrap list_style_none pad_0">
+        {% for skill in education_info["skills_list"] %}
+        <li class="bg_color_primary color_background border_radius-md pad-xs transition_colors">{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3 class="color_secondary margin_block_0 transition_colors">Chapter 1.2</h3>
+  <h2 class="color_primary margin_block_0 text-xl transition_colors">Experience</h2>
+  
+  <div class="before:bg_color_secondary before:content_none before:height_full before:-margin_left-sm before:pos_absolute before:top_0 before:width-xs before:transition_colors flex flex_col_wrap flex_initial pos_relative row_gap-xl">
+    {% for experience in experience_info %}
+      <div class="align_baseline bg_color_surface border_radius-md before:bg_color_background before:border_color_secondary before:border_radius_circle before:border_solid before:border_width_4px before:content_none before:height-xs before:-left-md before:pos_absolute before:top-md before:transition_colors before:width-xs before:z_index_1 pad-sm pos_relative transition_colors">
+        <div class="flex flex_row_nowrap flex_1 align_start justify_between gap-xs">
+          <div class="flex flex_col_wrap flex_1">
+            <p class="margin_block_0 text-lg">{{ experience["title"] }}</p>
+            <p class="color_secondary margin_block_0 text-md transition_colors">{{ experience["company"] }}</p>
+          </div>
+          
+          <span class="text_align_right flex">{{ experience["start_date"] }}<br>{{ experience["end_date"] }}</span>
+        </div>
+
+        <ul>
+          {% for element in experience["info"] %}
+          <li>{{ element }}</li>
+          {% endfor %}
+        </ul>
+
+        <ul class="column_gap-sm flex flex_row_wrap list_style_none pad_0">
+          {% for skill in experience["skills_list"] %}
+          <li class="bg_color_primary color_background border_radius-md pad-xs transition_colors">{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="skills">
+  <h3 class="color_secondary margin_block_0 transition_colors">Chapter 1.3</h3>
+  <h2 class="color_primary margin_block_0 text-xl transition_colors">Skills</h2>
+  
+  <div class="flex flex_col_wrap flex_initial justify_between row_gap-lg">
+    {% for skill_title, skills in skills_dict.items() %}
+      <div class="flex flex_col_nowrap flex_initial row_gap-md">
+        <h3 class="color_primary margin_block_0 transition_colors">{{ skill_title }}</h3>
+
+        <div class="flex flex_row_wrap flex_initial gap-md">
+          {% for skill_name, skill_logo in skills.items() %}
+            <div class="align_center bg_color_surface border_radius-md flex flex_col_wrap hover:glow_color_primary hover:scale_110 pad-sm transition_all">
+              <img src="{{ skill_logo }}" alt="{{ skill_name }} Logo"
+              height="48" class="align_center bg_color_white border_radius-xs flex flex_row_wrap flex_0 justify_center pad-lg">
+              <p>{{ skill_name }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock content %}

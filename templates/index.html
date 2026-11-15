@@ -1,0 +1,84 @@
+<!-- 
+Resources used to write this file:
+HTML cheatsheet for syntax and common tasks 2025,
+MDN contributors, accessed 16 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet>
+
+Creating links 2025, MDN contributors, accessed 17 October 2026,
+<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links>
+
+manaschhabra2 2025, "How to Add Link to HTML Button?", Sanchhaya Education Private Limited, accessed 20 October 2026,
+<https://www.geeksforgeeks.org/html/how-to-create-an-html-button-that-acts-like-a-link/>
+
+abishek7 2025, "How to Trigger a File Download when Clicking an HTML Button or JavaScript?", accessed 20 October 2026,
+<https://www.geeksforgeeks.org/javascript/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/>
+
+Animated Buttons - "Pressed Effect" n.d., Refsnes Data, accessed 29 October 2026,
+<https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3>
+ 
+Omega 2015, "Auto Resize Image in CSS FlexBox Layout and keeping Aspect Ratio?", Stack Exchange, Inc.,
+accessed 29 October 2026, <https://stackoverflow.com/a/21103679>
+
+yuvrajghule 2025, "How to Auto Resize Image in CSS FlexBox Layout and Keeping Aspect Ratio?", Sanchhaya Education Private Limited, 
+accessed 29 October 2026, <https://www.geeksforgeeks.org/html/how-to-auto-resize-image-in-css-flexbox-layout-and-keeping-aspect-ratio/>
+
+Lazy loading 2026, MDN contributors, accessed 7 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading>
+
+Document should have one main landmark n.d., Deque Systems,
+accessed 8 November 2026, <https://dequeuniversity.com/rules/axe/4.13/landmark-one-main>
+
+Template Inheritance n.d., Pallets, accessed 14 November 2026,
+<https://jinja.palletsprojects.com/en/stable/templates/#template-inheritance>
+-->
+
+{% extends "base.html" %}
+
+{% block content %}
+<main class="intro_page align_start flex flex_row_nowrap flex_1 gap-xs justify_between">
+  <div class="flex flex_col_wrap flex_initial width_2/3">
+    <h2 class="margin_block_0 text-xl">Hello, my name is</h2>
+    <h1 class="color_gradient margin_block_0 text-2xl text_gradient">Mustafa Onur KILINÇ</h1>
+    <h2 class="margin_block_0 text-xl">I am a <span class="color_gradient text_gradient">Computer Engineer</span></h2>
+    
+    <p>
+      I am open to learn, determined to make the best product I can, and easily stressed.
+
+      I am motivated by making things that can improve people's lives,
+      and fascinated by technologies of future like ADAS.
+    </p>
+    
+    <div class="flex flex_row_wrap flex_0 gap-sm margin_bottom-md">
+      <a href="https://github.com/mustafa-onur-kilinc" target="_blank" class="contact_image active:scale_98 active:translate_y_2px align_center bg_color_primary border_radius-xs flex flex_row_wrap flex_0 justify_center pad-xs transition_colors">
+        <img src="./static/logos/GitHub_Invertocat_White.svg" width="30" alt="GitHub">
+      </a>
+      
+      <a href="https://linkedin.com/in/mustafa-onur-kilinç-479449173" target="_blank" class="contact_image active:scale_98 active:translate_y_2px align_center bg_color_primary border_radius-xs flex flex_row_wrap flex_0 justify_center pad-xs transition_colors">
+        <img src="./static/logos/LinkedIn-InBug-White.png" width="30" alt="LinkedIn">
+      </a>
+      
+      <a href="mailto:mustafaonurkilinc00@gmail.com" class="contact_image active:scale_98 active:translate_y_2px align_center bg_color_primary border_radius-xs flex flex_row_wrap flex_0 justify_center pad-xs transition_colors">
+        <img src="./static/logos/mail_logo_by_magnific_flaticon_white.png" width="30" alt="E-mail">
+      </a>
+    </div>
+    
+    <div class="flex flex_row_wrap flex_initial gap-lg">
+      <a href="./contact.html">
+        <button class="active:scale_98 active:translate_y_2px border_box border_none border_radius_pill color_background color_gradient margin_0 margin_top-xs pad-md text-md transition_colors width_full" type="button">
+          Contact Me
+        </button>
+      </a>
+      
+      <a href="./static/files/mustafa_onur_kilinc_english_cv.pdf" download="mustafa_onur_kilinc_cv.pdf">
+        <button class="active:scale_98 active:translate_y_2px bg_color_transparent border_box border_none border_radius_pill color_text inset_ring_4px margin_0 margin_top-xs pad-md text-md transition_colors width_full" type="button">
+          Download CV (PDF, 173 KB)
+        </button>
+      </a>
+    </div>
+  </div>
+  
+  <div class="align_center flex flex_row_wrap flex_1 justify_end max_width_15em">
+    <img class="flex flex_row_nowrap flex_1 height_auto max_width_full object_fit_cover" src="./static/images/mustafa_onur_kilinc_photo.jpg" alt="My Profile Picture"/>
+  </div>
+</main>
+{% endblock content %}

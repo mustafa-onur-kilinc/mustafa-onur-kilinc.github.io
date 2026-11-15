@@ -1,0 +1,21 @@
+{
+    "Programming Languages": {
+        "C/C++": "../static/logos/cpp_logo.svg",
+        "Python": "../static/logos/python_logo_only.svg",
+        "Java": "../static/logos/Duke_(Java_mascot)_waving.svg"
+    },
+    "Tools and Platforms": {
+        "Bash": "../static/logos/code-terminal.png",
+        "SQL": "../static/logos/database.png",
+        "ROS": "../static/logos/ROS_TM_logo_color.svg",
+        "Docker": "../static/logos/docker-mark-ocean-blue.svg",
+        "Git": "../static/logos/Git_Icon_Orange.svg",
+        "Canva": "../static/logos/graphic-design.png",
+        "HTML": "../static/logos/HTML5_Badge.svg",
+        "CSS": "../static/logos/CSS_Icon.svg"
+    },
+    "Soft Skills": {
+        "Graphic Design": "../static/logos/graphic-design.png",
+        "Teamwork": "../static/logos/teamwork.png"
+    }
+}

@@ -1,0 +1,33 @@
+[
+    {
+        "image": "../static/images/endless_constellation_light.svg",
+        "title": "Flask ile Blog Websitesi",
+        "explanation": "Bu blog websitesi Dr. Angela Yu'nun \"100 Days of Python\" Udemy kursu sürecinde geliştirildi.",
+        "skills_list": [
+            "HTML",
+            "CSS",
+            "Flask",
+            "Python"
+        ],
+        "project_link": "https://github.com/mustafa-onur-kilinc/blog_website_with_flask"
+    },
+    {
+        "image": "../static/images/endless_constellation_light.svg",
+        "title": "Metin Mors Kodu Dönüştürücü",
+        "explanation": "Kullanıcı girdisini Mors kodu karşılığına dönüştüren bir Python programı. Türkçe ve İngilizce kelimelerle çalışabiliyor.",
+        "skills_list": [
+            "Python"
+        ],
+        "project_link": "https://github.com/mustafa-onur-kilinc/text_to_morse_code"
+    },
+    {
+        "image": "../static/images/endless_constellation_light.svg",
+        "title": "Tkinter TODO Uygulaması",
+        "explanation": "Python ve Tkinter ile geliştirilmiş basit bir yapılacaklar uygulaması.",
+        "skills_list": [
+            "Python",
+            "Tkinter"
+        ],
+        "project_link": "https://github.com/mustafa-onur-kilinc/tkinter-todo-app"
+    }
+]

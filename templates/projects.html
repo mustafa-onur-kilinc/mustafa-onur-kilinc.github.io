@@ -1,0 +1,65 @@
+<!-- 
+Resources used to write this file:
+HTML cheatsheet for syntax and common tasks 2025,
+MDN contributors, accessed 16 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet>
+
+Creating links 2025, MDN contributors, accessed 17 October 2026,
+<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links>
+
+manaschhabra2 2025, "How to Add Link to HTML Button?", Sanchhaya Education Private Limited, accessed 20 October 2026,
+<https://www.geeksforgeeks.org/html/how-to-create-an-html-button-that-acts-like-a-link/>
+
+Animated Buttons - "Pressed Effect" n.d., Refsnes Data, accessed 29 October 2026,
+<https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3>
+
+Lazy loading 2026, MDN contributors, accessed 7 November 2026,
+<https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading>
+
+Document should have one main landmark n.d., Deque Systems,
+accessed 8 November 2026, <https://dequeuniversity.com/rules/axe/4.13/landmark-one-main>
+
+For n.d., Pallets, accessed 15 November 2026,
+<https://jinja.palletsprojects.com/en/stable/templates/#for> 
+-->
+
+{% extends "base.html" %}
+
+{% block change_lang %}
+href="{{ url_for('projects_tr') }}"
+{% endblock change_lang %}
+
+{% block content %}
+<main>
+  <h3 class="color_secondary margin_block_0 transition_colors">Chapter 2</h3>
+  <h1 class="color_primary margin_block_0 text-2xl transition_colors">Projects</h1>
+  
+  <div class="flex flex_row_nowrap flex_initial justify_between gap-md max_width-sm:flex_wrap max_width-sm:justify_evenly">
+    {% for project in projects_list %}
+      <div class="align_baseline bg_color_surface border_radius-md flex flex_col_wrap flex_1 max_width_20em pad-sm transition_colors">
+        <img loading="lazy" src="{{ project['image'] }}" 
+        alt="Image of Project" class="align_center align_self_center border_radius-xs flex flex_row_wrap flex_0 justify_center object_fit_cover width_full" height="180">
+
+        <h2 class="color_surface_text margin_block_0 text-xl transition_colors">{{ project['title'] }}</h2>
+        <p class="color_surface_text transition_colors">{{ project['explanation'] }}</p>
+
+        <ul class="flex flex_row_wrap gap-sm list_style_none pad_0">
+          {% for skill in project['skills_list'] %}
+            <li class="border_color_primary border_solid border_width-2xs bg_color_background color_surface_text border_radius-md pad-xs transition_colors">
+              {{ skill }}
+            </li>
+          {% endfor %}
+        </ul>
+
+        <div class="align_self_end">
+          <a href="{{ project['project_link'] }}" target="_blank">
+            <button class="active:scale_98 active:translate_y_2px bg_color_secondary border_box border_none border_radius-md color_background margin_0 pad-xs text-md transition_colors width_full" type="button">
+              Source
+            </button>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</main>
+{% endblock content %}

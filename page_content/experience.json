@@ -1,0 +1,78 @@
+[
+    {
+        "title": "Lane Detection Deparment Member",
+        "company": "YTÜ Alternatif Enerjili Sistemler Kulübü",
+        "start_date": "June 2023",
+        "end_date": "August 2024",
+        "info": [
+            "Integrated TwinLiteNet AI model for drivable area and lane detection via camera",
+            "Integrated a CNN model for behavioral cloning with TensorFlow, tested in simulation",
+            "Trained and mentored successors in the Lane Detection department"
+        ],
+        "skills_list": [
+            "Bash",
+            "Docker",
+            "Git",
+            "Python",
+            "ROS",
+            "Teamwork"
+        ]
+    },
+    {
+        "title": "Process and Customer Development Department Intern",
+        "company": "Mars Logistics",
+        "start_date": "October 2023",
+        "end_date": "December 2023",
+        "info": [
+            "Developed a Windows application in Pascal and connected the app to a local database to demonstrate desired improvements to the company’s app"
+        ],
+        "skills_list": [
+            "SQL",
+            "Turbo Pascal"
+        ]
+    },
+    {
+        "title": "Team Member",
+        "company": "YTÜ Alternatif Enerjili Sistemler Kulübü",
+        "start_date": "October 2022",
+        "end_date": "June 2023",
+        "info": [
+            "Wrote basic ROS nodes in C++",
+            "Learned fundamentals of ROS"
+        ],
+        "skills_list": [
+            "Bash",
+            "C++",
+            "ROS",
+            "Teamwork"
+        ]
+    },
+    {
+        "title": "Information Technologies Department Intern",
+        "company": "Mars Logistics",
+        "start_date": "August 2022",
+        "end_date": "September 2022",
+        "info": [
+            "Developed a C application to sort cargo according to its volume, weight and destination",
+            "Assisted with company software’s user operations"
+        ],
+        "skills_list": ["C"]
+    },
+    {
+        "title": "Design Committee Member",
+        "company": "IEEE YTÜ Student Branch",
+        "start_date": "June 2019",
+        "end_date": "June 2021",
+        "info": [
+            "Worked with other committees to develop advertising materials for their events",
+            "Organized online lessons for how to use Canva and GIMP",
+            "Trained and mentored successors of Design Committee department",
+            "Participated in organizing events for the student branch"
+        ],
+        "skills_list": [
+            "Canva",
+            "Graphic Design",
+            "Teamwork"
+        ]
+    }
+]

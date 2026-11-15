@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Şerit Tespiti Departman Üyesi",
+        "company": "YTÜ Alternatif Enerjili Sistemler Kulübü",
+        "start_date": "Haziran 2023",
+        "end_date": "Ağustos 2024",
+        "info": [
+            "Kamera ile sürülebilir alan ve şerit tespiti için TwinLiteNet modelinin entegre edilmesine çalıştım",
+            "Davranış Klonlama için TensorFlow ile bir CNN modeli entegre ettim, simülasyonda test ettim",
+            "Şerit Tespiti departmanının sonraki üyelerinin eğitilmesinde çalıştım"
+        ],
+        "skills_list": [
+            "Bash",
+            "Docker",
+            "Git",
+            "Python",
+            "ROS",
+            "Teamwork"
+        ]
+    },
+    {
+        "title": "Süreç ve Müşteri Geliştirme Departmanı Stajyeri",
+        "company": "Mars Logistics",
+        "start_date": "Ekim 2023",
+        "end_date": "Aralık 2023",
+        "info": [
+            "Şirketin uygulamasına yapılması istenen eklentileri gösterebilmek için bir Pascal masaüstü uygulaması geliştirdim, bu uygulamayı yerel bir veritabanına bağladım"
+        ],
+        "skills_list": [
+            "SQL",
+            "Turbo Pascal"
+        ]
+    },
+    {
+        "title": "Takım Üyesi",
+        "company": "YTÜ Alternatif Enerjili Sistemler Kulübü",
+        "start_date": "October 2022",
+        "end_date": "June 2023",
+        "info": [
+            "C++ ile basit ROS node’ları yazdım",
+            "ROS’un temellerini öğrendim"
+        ],
+        "skills_list": [
+            "Bash",
+            "C++",
+            "ROS",
+            "Teamwork"
+        ]
+    },
+    {
+        "title": "Bilgi Teknolojileri Departmanı Stajyeri",
+        "company": "Mars Logistics",
+        "start_date": "Ağustos 2022",
+        "end_date": "Eylül 2022",
+        "info": [
+            "Yükleri hacim, ağırlık ve gideceği yere göre gruplandıran bir C uygulaması yazdım",
+            "Şirket yazılımının kullanıcı işlemlerine yardımcı oldum"
+        ],
+        "skills_list": [
+            "C"
+        ]
+    },
+    {
+        "title": "Tasarım Komitesi Üyesi",
+        "company": "IEEE YTÜ Öğrenci Kolu",
+        "start_date": "Haziran 2019",
+        "end_date": "Haziran 2021",
+        "info": [
+            "Diğer komitelerin etkinliklerine tanıtım malzemesi hazırlamak için onlarla birlikte çalıştım",
+            "Canva ve GIMP uygulamalarının kullanımı konusunda online eğitimler düzenledim",
+            "Tasarım Komitesi departmanının gelecek üyelerini eğittim",
+            "Öğrenci kolunun etkinliklerinin organizasyonunda çalıştım"
+        ],
+        "skills_list": [
+            "Canva",
+            "Ekip Çalışması",
+            "Grafik Tasarım"
+        ]
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "image": "./static/images/endless_constellation_light.svg",
+        "title": "Blog Website with Flask",
+        "explanation": "This blog website was developed over the course of \"100 Days of Python\" Udemy course of Dr. Angela Yu.",
+        "skills_list": [
+            "HTML",
+            "CSS",
+            "Flask",
+            "Python"
+        ],
+        "project_link": "https://github.com/mustafa-onur-kilinc/blog_website_with_flask"
+    },
+    {
+        "image": "./static/images/endless_constellation_light.svg",
+        "title": "Text to Morse Code Converter",
+        "explanation": "A Python script for converting user input to its morse code equivalent. Accepts Turkish and English words.",
+        "skills_list": ["Python"],
+        "project_link": "https://github.com/mustafa-onur-kilinc/text_to_morse_code"
+    },
+    {
+        "image": "./static/images/endless_constellation_light.svg",
+        "title": "Tkinter TODO Application",
+        "explanation": "A simple TODO application developed with Python and Tkinter.",
+        "skills_list": [
+            "Python",
+            "Tkinter"
+        ],
+        "project_link": "https://github.com/mustafa-onur-kilinc/tkinter-todo-app"
+    }
+]

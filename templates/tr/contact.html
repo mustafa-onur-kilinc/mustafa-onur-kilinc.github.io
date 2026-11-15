@@ -1,0 +1,130 @@
+<!-- 
+Resources used to write this file:
+HTML cheatsheet for syntax and common tasks 2025,
+MDN contributors, accessed 16 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet>
+
+Creating links 2025, MDN contributors, accessed 17 October 2026,
+<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links>
+
+<form> HTML form element 2026, MDN contributors, accessed 17 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form>
+
+<label> HTML label element 2026, MDN contributors, accessed 19 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label>
+
+<legend> HTML field set legend element 2026, MDN contributors, accessed 19 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend>
+
+disabled HTML attribute 2026, MDN contributors, accessed 20 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled>
+
+Animated Buttons - "Pressed Effect" n.d., Refsnes Data, accessed 29 October 2026,
+<https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3>
+
+Oguzcan 2026, "How to Send an HTML Form to Email Without a Server", accessed 29 October 2026,
+<https://forminit.com/blog/html-form-send-email-without-server/>
+
+<legend> HTML field set legend element 2026, MDN contributors, accessed 31 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend>
+
+<polygon> 2025, MDN contributors, accessed 31 October 2026,
+<https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/polygon>
+
+Document should have one main landmark n.d., Deque Systems,
+accessed 8 November 2026, <https://dequeuniversity.com/rules/axe/4.13/landmark-one-main>
+-->
+
+{% extends "tr/base_tr.html" %}
+
+{% block change_lang %}
+href="{{ url_for('contact') }}"
+{% endblock change_lang %}
+
+{% block content %}
+<main>
+  <h3 class="color_secondary margin_block_0 transition_colors">Bölüm 3</h3>
+  <h1 class="color_primary margin_block_0 text-2xl transition_colors">İletişim</h1>
+
+  <div class="flex flex_row_nowrap flex_initial justify_between gap-xs max_width-sm:flex_column max_width-sm:flex_wrap">
+    <div class="flex flex_col_nowrap flex_1 justify_between align_stretch row_gap-xs">
+      <div class="align_center bg_color_surface border_radius-md column_gap-xs flex flex_row_wrap flex_1 justify_left hover:glow_color_primary hover:scale_110 pad-sm transition_all max_width-sm:overflow_scroll">
+        <img src="../static/logos/mail_logo_by_magnific_flaticon_white.png" width="42" alt="E-mail"
+        class="contact_image align_center bg_color_primary border_radius-xs flex flex_row_wrap flex_0 justify_center pad-xs transition_colors">
+        <div>
+          <h3 class="color_primary margin_block_0 transition_colors">E-posta</h3>
+          <a href="mailto:mustafaonurkilinc00@gmail.com" class="color_surface_text margin_0 transition_colors">
+            mustafaonurkilinc00@gmail.com
+          </a>
+        </div>
+      </div>
+    
+      <div class="align_center bg_color_surface border_radius-md column_gap-xs flex flex_row_wrap flex_1 justify_left hover:glow_color_primary hover:scale_110 pad-sm transition_all max_width-sm:overflow_scroll">
+        <img src="../static/logos/LinkedIn-InBug-White.png" width="40" height="36" alt="LinkedIn"
+        class="contact_image align_center bg_color_primary border_radius-xs flex flex_row_wrap flex_0 justify_center pad-xs transition_colors">
+        <div>
+          <h3 class="color_primary margin_block_0 transition_colors">LinkedIn</h3>
+          <a href="https://linkedin.com/in/mustafa-onur-kilinç-479449173" target="_blank" class="color_surface_text margin_0 transition_colors">
+            https://linkedin.com/in/mustafa-onur-kilinç-479449173
+          </a>
+        </div>
+      </div>
+      
+      <div class="align_center bg_color_surface border_radius-md column_gap-xs flex flex_row_wrap flex_1 justify_left hover:glow_color_primary hover:scale_110 pad-sm transition_all max_width-sm:overflow_scroll">
+        <img src="../static/logos/GitHub_Invertocat_White.svg" width="42" alt="GitHub"
+        class="contact_image align_center bg_color_primary border_radius-xs flex flex_row_wrap flex_0 justify_center pad-xs transition_colors">
+        <div>
+          <h3 class="color_primary margin_block_0 transition_colors">GitHub</h3>
+          <a href="https://github.com/mustafa-onur-kilinc" target="_blank" class="color_surface_text margin_0 transition_colors">
+            https://github.com/mustafa-onur-kilinc
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div id="contact_form" class="align_center bg_color_surface border_radius-md color_primary flex flex_col_wrap justify_center pad-sm transition_colors max_width-sm:justify_start max_width-sm:overflow_scroll">
+      <form class="flex flex_1" action="https://api.web3forms.com/submit" method="POST">
+        <fieldset class="border_none flex flex_col_wrap flex_1 align_start gap-xs">
+          <legend class="-margin_left_0_25em">
+            <h3 class="margin_block_0">İletişime Geçin</h3>
+          </legend>
+          
+          <input type="hidden" name="access_key" value="18d8c6af-3e72-4d04-8175-591832c72d4e">
+
+          <div class="flex flex_col_nowrap flex_1">
+            <label for="name">Adınız</label>
+            <input type="text" class="border_none border_radius-xs margin_0 width_full" id="name" name="user_name" placeholder="Ali VELİ" required>
+          </div>
+          
+          <div class="flex flex_col_nowrap flex_1">
+            <label for="mail">E-posta Adresiniz</label>
+            <input type="email" class="border_none border_radius-xs margin_0 width_full" id="mail" name="user_email" placeholder="örnek@mail.com" required>
+          </div>
+          
+          <div class="flex flex_col_nowrap flex_1">
+            <label for="subject">Başlık</label>
+            <input type="text" class="border_none border_radius-xs margin_0 width_full" id="subject" name="message_subject" placeholder="İyi Günler">
+          </div>
+          
+          <div class="flex flex_col_nowrap flex_1">
+            <label for="msg">Mesaj Metni</label>
+            <textarea type="text" class="border_none border_radius-xs height_7em overflow_auto margin_0 width_full" id="msg" name="message" placeholder="İyi günler..." required></textarea>
+          </div>
+          
+          <div class="flex flex_col_nowrap flex_1">
+            <button type="submit" class="active:scale_98 active:translate_y_2px align_center bg_color_secondary border_box border_none border_radius-xs color_background flex gap-xs margin_0 pad-sm transition_colors width_full">
+              Gönder
+
+              <!-- Used a custom SVG instead of an image for better control over stroke color -->
+              <svg class="stroke_color_background transition_colors" width="2.5em" height="2em" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="1,9 30,3 12,25 9,18 22,8 7,15" fill="none" style="stroke:currentColor;stroke-width:1;"/>
+                <polygon points="9,18 19,10 7,15 3,20 2.3,21" fill="currentColor" style="stroke:currentColor;stroke-width:0.5;"/>
+              </svg>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock content %}
