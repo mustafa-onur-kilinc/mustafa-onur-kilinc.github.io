@@ -1,3 +1,17 @@
+# Original deploy.yml from John Yang
+# deploy.yml 2026, John Yang, accessed 15 November 2026,
+# <https://github.com/john-b-yang/john-b-yang.github.io/blob/master/.github/workflows/deploy.yml>
+# 
+# Resources used to write this file:
+# github-pages-deploy-action 2026, JamesIves, accessed 15 November 2026,
+# <https://github.com/JamesIves/github-pages-deploy-action/tree/dev>
+# 
+# kelvin 2023, "How to deploy a website with GitHub pages from a folder other than "docs/"?", 
+# Stack Exchange, Inc., accessed 15 November 2026, <https://stackoverflow.com/a/77735145>
+# 
+# actions-gh-pages 2026, Shohei Ueda, accessed 15 November 2026,
+# <https://github.com/peaceiris/actions-gh-pages>
+
 name: Deploy to GitHub Pages
 
 on:
