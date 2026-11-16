@@ -6,26 +6,55 @@ This website is intended to be my online resumé, where I can introduce myself t
 
 ```
 root/
-|-> static/
-|   |-> style.css
-|   |-> files/
-|   |-> images/
-|   |-> logos/
-| 
-|-> tr/
+|-> build/
+|   |-> static/
+|   |   |-> files/
+|   |   |-> images/
+|   |   |-> logos/
+|   |   |-> style.css
+|   |
+|   |-> tr/
+|   |   |-> about.html
+|   |   |-> contact.html
+|   |   |-> index.html
+|   |   |-> projects.html
+|   |
 |   |-> about.html
 |   |-> contact.html
 |   |-> index.html
 |   |-> projects.html
 |
-|-> about.html
-|-> contact.html
-|-> index.html
-|-> projects.html
+|-> page_content/
+|
+|-> static/
+|   |-> files/
+|   |-> images/
+|   |-> logos/
+|   |-> style.css
+|
+|-> templates/
+|   |-> tr/
+|   |   |-> about.html
+|   |   |-> base_tr.html
+|   |   |-> contact.html
+|   |   |-> index.html
+|   |   |-> projects.html
+|   |
+|   |-> about.html
+|   |-> base.html
+|   |-> contact.html
+|   |-> index.html
+|   |-> projects.html
+|
+|-> .gitignore
+|-> freeze.py
+|-> README.md
+|-> requirements.txt
+|-> server.py
 ```
 
 ## TODO
-- [] Use frozen-flask to generate static web pages using Python and Flask framework
+- [x] Use frozen-flask to generate static web pages using Python and Flask framework
 
 ## Acknowledgements
 
